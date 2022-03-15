@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyBay Belt Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="header d-flex justify-between">
+        <img
+          id="logo"
+          class="easybaygreen"
+          src="./images/leaf.png"
+          alt="logo"
+        />
+        <h1>EasyBay</h1>
+        <input class="search" type="text" placeholder="Search for anything" />
+        <h3>Sign In</h3>
+        <img
+          onclick="cartAlert()"
+          id="cart"
+          src="./images/cart-dark.png"
+          alt=""
+        />
+      </div>
+      
+      <!-- Navbar -->
+      <div class="nav d-flex justify-between">
+        <h3>Aeonium</h3>
+        <h3>Andormischus</h3>
+        <h3>Agave</h3>
+        <h3>Aloe</h3>
+        <h3>Anacampseros</h3>
+        <h3>Aristaloe</h3>
+        <h3>More...</h3>
+      </div>
+      <h1 class="title">You Source for Serious Succulent Specialties</h1>
+      <div class="main d-flex justify-between">
+        <div class="discover d-flex justify-between col-2">
+          <div class="easybaygreen text-white d-flex justify-between">
+            <h2>Discover succulent varieties one pot or rack at a time!</h2>
+            <h2>Discover <img src="./images/arrow-light.png" alt="arrow" /></h2>
+          </div>
+          <img
+            onmouseover="changePicture(this, './images/succulents-2.jpg')"
+            onmouseout="changePicture(this, './images/succulents-1.jpg')"
+            src="./images/succulents-1.jpg"
+            alt="succulents"
+          />
+        </div>
+        <div class="side col-1 d-flex justify-between">
+          <img src="./images/aloe-m.jpg" alt="aloe plant" />
+          <h2 class="easybaygreen text-white">
+            Soothing Aloe <img src="./images/arrow-light.png" alt="arrow" />
+          </h2>
+        </div>
+      </div>
+      <div class="footer d-flex justify-between easybaylightgreen">
+        <div class="plant">
+          <img src="./images/aeonium-s.jpg" alt="plant" />
+          <h4>Aeonium</h4>
+        </div>
+        <div class="plant">
+          <img src="./images/aloe-s.jpg" alt="plant" />
+          <h4>Aloe</h4>
+        </div>
+        <div class="plant">
+          <img src="./images/cactus-s.jpg" alt="plant" />
+          <h4>Cactus</h4>
+        </div>
+        <div class="plant">
+          <img src="./images/echeveria-s.jpg" alt="plant" />
+          <h4>Echeveria</h4>
+        </div>
+        <div class="plant">
+          <img src="./images/sedum-s.jpg" alt="plant" />
+          <h4>Sedum</h4>
+        </div>
+        <div class="plant">
+          <img src="./images/sempervivum-s.jpg" alt="plant" />
+          <h4>Sempervivum</h4>
+        </div>
+      </div>
+    </div>
+    <div class="cookies d-flex justify-between" id="cookies">
+      <img src="./images/alert-dark.png" alt="alert" />
+      <p>
+        This site makes use of third-party cookies, by clicking "I accept" you
+        agree to the terms outline in our <a href="">cookie policy.</a>
+      </p>
+      <button onclick="acceptCookies()" class="easybaygreen text-white">
+        I Accept
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

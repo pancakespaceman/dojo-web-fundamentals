@@ -1,0 +1,88 @@
+/* CSS RESET */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+/* here is a change */
+body {
+  /* background: linear-gradient(red, black); */
+}
+
+.title {
+  color: rebeccapurple;
+  font-size: 50px;
+  border: 5px solid black;
+  padding: 30px;
+  /* 4 numbers, 2 numbers, 1 number */
+  /* margin: Top, Right, Bottom, Left;
+  margin: Top/Bottom, Left/Right
+  margin: Everything; */
+  /* margin: 10px 30px 5px 15px; */
+  /* margin: 20px 30px; */
+  /* margin: 0px 0px 20px 0px; */
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+img {
+  margin-top: 50px;
+  display: block;
+}
+
+h3 {
+  color: aqua;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+span {
+  color: red;
+  font-size: 24pt;
+}
+
+/* This is a CSS comment */
+
+/* CSS Classes */
+/* classes can be reused for any HTML tags*/
+.amazing {
+  color: yellow;
+  font-size: 75px;
+}
+
+
+.thing1 {
+  color: orange;
+}
+
+.thing2 {
+  color: blue;
+}
+li {
+  color: green;
+  background-color: rebeccapurple;
+}
+
+/* li {
+  color: red;
+} */
+
+/* CSS IDs */
+/* ids can only apply to a single HTML tags */
+#dog {
+  border: 5px solid red;
+  border-radius: 10px;
+}
+
+
+
+h1 {
+  background-color: red;
+  padding: 10px;
+  /* display: inline-block; */
+}
+
+button {
+  background-color: green;
+  padding: 10px;
+  display: block;
+}
