@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS On the Browser</title>
+  </head>
+  <body>
+    <h1 id="title" onclick="foobar(this)">Hello There</h1>
+
+    <button onclick="foobar('title')">Click me! 1</button>
+    <button onclick="foobar('paragraph')">Click me! 2</button>
+    <!-- <button onclick="foobar(this)">Click me! 3</button> -->
+    <!-- <button onclick="foobar(this)">Click me! 4</button> -->
+    <p id="paragraph" onclick="foobar(this)">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, neque
+      facere, fugit fugiat quam cumque consectetur beatae repudiandae, minima
+      aperiam ut explicabo laboriosam vitae necessitatibus fuga iure assumenda
+      iste reiciendis!
+    </p>
+
+    <!-- <img src="./images/cardBack.jpeg" alt="pokemon card" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"> -->
+    <button onclick="addHTML('content')">Add Some HTML</button>
+    <div id="content"></div>
+
+    <label>I would like to eat </label>
+    <select onchange="chooseLunch(this)">
+      <option>Tacos</option>
+      <option>Pasta</option>
+      <option>Sushi</option>
+    </select>
+
+    <p id="name">
+      Name:
+      <input type="text" name="name" id="nameInput" oninput="validateName(this)">
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

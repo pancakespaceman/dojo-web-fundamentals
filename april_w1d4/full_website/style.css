@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Jura', sans-serif;
+  color: white;
+  /* outline: 1px solid red; */
+}
+
+/* GENERAL CSS */
+
+.d-flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+.col-3 {
+  flex: 3;
+}
+
+.col-4 {
+  flex: 4;
+}
+
+/* Wrapper */
+
+.wrapper {
+  background: url("./images/halo-background.jpg");
+  height: 1000px;
+}
+
+
+/* Nav Bar CSS */
+nav {
+  gap: 80px;
+  padding: 25px;
+  background-color: rgba(20,20,20, .85);
+}
+
+nav > svg {
+  /* width: 140px; */
+  height: 80px;
+}
+
+.yellow-border {
+  border: 1px solid rgb(249,192,28);
+  padding: 2px;
+  background-color: black;
+  width: fit-content;
+}
+
+.get-halo {
+  width: 164px;
+  height: 45px;
+  background-color: rgb(249,192,28);
+  color: black;
+  font-size: 14pt;
+}
+
+/* MAIN CSS */
+
+main {
+  margin-left: 100px;
+  margin-top: 100px;
+  width: fit-content;
+}
+
+main .random-numbers {
+  border-bottom: 1px solid rgb(58,80,103);
+  padding-bottom: 15px;
+}
+
+main h1 {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+main .desc {
+  margin-bottom: 50px;
+}
+
+main .consoles {
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main .console {
+  width: 75px;
+  height: 30px;
+  background-color: blanchedalmond;
+}

@@ -1,0 +1,87 @@
+* {
+  background-color: black;
+  color: white;
+}
+
+h3 {
+  /* background-color: skyblue; */
+  background-color: red;
+}
+
+li {
+  color: yellow;
+}
+
+/* Class */
+/* Class is a set of css that can be applied anywhere we want and many things*/
+/* prefixed with a period */
+.my-color {
+  color: salmon;
+}
+
+.bg-purple {
+  background-color: rebeccapurple;
+}
+
+
+/* ID */
+/* apply css to ONE element */
+/* prefixed with a # */
+/* #subheading {
+  background-color: black;
+  color: lightseagreen;
+} */
+
+
+#thing > p {
+  background-color: orange;
+  color: dodgerblue;
+  border: 1px solid red;
+}
+
+
+/* h1 {
+  width: 70%;
+  border-radius: 50%;
+} */
+
+#box {
+  background-color: blanchedalmond;
+  color: black;
+  font-size: 48pt;
+  border: 5px solid orangered;
+  padding: 20px;
+  margin: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#parent {
+  background-color: greenyellow;
+  padding: 30px;
+  text-align: right;
+}
+
+#parent h1 {
+  color: royalblue;
+  margin: 40px;
+}
+
+.giraffe {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border: 1px solid red;
+  margin: 40px;
+  display: inline-block;
+}
+
+#thing {
+  background-color: lightsteelblue;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

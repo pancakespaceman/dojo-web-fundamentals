@@ -20,30 +20,29 @@ p {
   font-size: 1.1rem;
 }
 #message {
-  width: 100%;
+  width: inherit;
   border: 1px solid #eee;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 4px 4px 4px grey;
   /* change the position properties here */
-  position: fixed; 
+  /* Relative means positioned relative to its normal position */
+  /* position: relative;
+  right: 100px;
+  bottom: 100px; */
+  /* FIXED means it is positioned relative to the browser window (viewport) */
+  /* position: fixed;
   bottom: 0;
-  /* left: 340px; */
-  /* position: relative; */
-  /* left: 30px; */
-  /* right: 50px; */
-  /* top: 100px; */
-  /* bottom: 80px; */
-  /* position: absolute; */
-  /* left: 100px; */
-  /* top: 50px; */
-  /* bottom: 200px; */
+  left: 250px; */
+  /* ABSOLUTE means it is positioned relative to its parent */
+  position: absolute;
+  left: 50px;
+  top: 100px;
 }
 
 #message * {
   margin: 10px;
 }
-
 #message .header {
   margin: 0px;
   background-color: #ddd;
@@ -51,15 +50,17 @@ p {
   font-weight: 900;
   display: flex;
   justify-content: space-between;
-  text-align: center;
 }
 #message button {
   height: 30px;
   width: 80px;
 }
 
-.thing {
+#test {
+  border: 5px solid red;
+  position: fixed;
+  bottom: 200px;
+  left: 500px;
   width: 500px;
-  height: 200px;
-  background-color: black;
+  height: 500px;
 }

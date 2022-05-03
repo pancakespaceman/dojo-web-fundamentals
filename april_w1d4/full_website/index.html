@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Almost as Good Halo Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="nav">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Website Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Nav Bar -->
+    <nav class="d-flex justify-between align-center">
       <svg
         version="1.1"
         id="Layer_1"
@@ -21,6 +20,7 @@
         y="0px"
         viewBox="0 0 550 142"
         xml:space="preserve"
+        class="col-1"
       >
         <style type="text/css">
           .st0 {
@@ -138,41 +138,53 @@
         ></rect>
         <polygon class="st2" points="251,80.7 248,80.7 248,77.7 "></polygon>
       </svg>
-      <ul class="nav-links">
-        <li>GAMES</li>
-        <li>NEWS</li>
-        <li>ESPORTS</li>
-        <li>SHOW</li>
-        <li>COMMUNITY</li>
+      <ul class="d-flex justify-between col-4">
+        <li><a href="#">GAMES</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">ESPORTS</a></li>
+        <li><a href="#">SHOW</a></li>
+        <li><a href="#">COMMUNITY</a></li>
         <li>
-          SUPPORT
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h12zm0-1H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" fill="#70CDDF"></path><path d="M6.065 2.98v1.145h4.895l-7.48 7.49.8.806 7.5-7.51v4.93h1.145V2.98h-6.86z" fill="#70CDDF"></path></svg>
+          <a href="#">
+            SUPPORT
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h12zm0-1H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" fill="#70CDDF"></path><path d="M6.065 2.98v1.145h4.895l-7.48 7.49.8.806 7.5-7.51v4.93h1.145V2.98h-6.86z" fill="#70CDDF"></path></svg>
+          </a>
         </li>
         <li>
-          GEAR
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h12zm0-1H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" fill="#70CDDF"></path><path d="M6.065 2.98v1.145h4.895l-7.48 7.49.8.806 7.5-7.51v4.93h1.145V2.98h-6.86z" fill="#70CDDF"></path></svg>
+          <a href="#">
+            GEAR
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h12zm0-1H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" fill="#70CDDF"></path><path d="M6.065 2.98v1.145h4.895l-7.48 7.49.8.806 7.5-7.51v4.93h1.145V2.98h-6.86z" fill="#70CDDF"></path></svg>
+          </a>
         </li>
       </ul>
-      <div class="nav-buttons">
+      <div class="d-flex justify-between col-1">
         <div class="yellow-border">
           <button class="get-halo">GET HALO</button>
         </div>
-        <button class="sign-in">SIGN IN</button>
+        <a href="">SIGN IN</a>
       </div>
-    </div>
-    <div class="main">
-      <!-- <img src="https://i.insider.com/60cb68f320bd1300181c6d68?width=1000&format=jpeg&auto=webp" alt=""> -->
-      <div class="main-content">
-        <h1>HALO INFINITE</h1>
-        <p>The mission is clear. Step into Master Chief’s armor in the Halo Infinite campaign now.</p>
-        <p>AVAILABLE ON:</p>
-        <div class="os">
-          <div class="box"></div>
-          <div id="red" class="box"></div>
-          <div class="box"></div>
-        </div>
-        <p>PLAY NOW ON XBOX GAME PASS</p>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <p class="random-numbers">051311.01</p>
+      <h1>HALO INFINITE</h1>
+      <p class="desc">The mission is clear. Step into Master Chief's armor in the Halo Infinite campaign now.</p>
+      <h3>AVAILABLE ON:</h3>
+      <div class="consoles d-flex">
+        <div class="console"></div>
+        <div class="console"></div>
+        <div class="console"></div>
       </div>
-    </div>
-  </body>
+      <h3>PLAY NOW ON XBOX GAME PASS</h3>
+      <div class="yellow-border">
+        <button class="get-halo">GET GAME</button>
+      </div>
+      <div class="d-flex justify-between">
+        <button>WATCH TRAILER</button>
+        <button>READ BLOG</button>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
