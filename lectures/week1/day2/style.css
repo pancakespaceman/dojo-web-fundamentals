@@ -1,0 +1,48 @@
+* {
+  font-family: Comic Sans MS; 
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+ul {
+  border: 1px solid red;
+}
+
+li {
+  background-color: blanchedalmond;
+}
+
+/* CSS Classes */
+/* class is a way of adding to CSS to anything we put */
+/* the class on */
+.border {
+  border: 5px dotted blue;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+  font-family: monospace; 
+  /* text-align: end; */
+}
+
+/* CSS IDs */
+/* id is a way to specifying the CSS for ONE thing */
+#banana {
+  background-color: yellow;
+  color: cyan;
+}
+
+
+
+.quote {
+  background-color: maroon;
+}
+
+.quote > p {
+  color: aliceblue;
+}
