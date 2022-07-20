@@ -1,0 +1,61 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.box1 {
+  background-color: blanchedalmond;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.box1 ul {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+
+.box1 li {
+  background-color: darkred;
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.box2 {
+  background-color: aquamarine;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+
+#logo {
+  width: 25%;
+  gap: 20px;
+}
+
+#nav {
+  width: 40%;
+}
+
+#nav li {
+  list-style-type: none;
+}
+
+#nav a {
+  text-decoration: none;
+}
