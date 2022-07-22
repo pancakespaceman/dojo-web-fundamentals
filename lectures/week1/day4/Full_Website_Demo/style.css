@@ -1,0 +1,137 @@
+* {
+  font-family: 'Jura', sans-serif;
+  border: 0px none;
+  outline: 0px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Generic Classes */
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap {
+  gap: 20px;
+}
+
+/* Wrapper */
+
+.wrapper {
+  background: url("https://www.nme.com/wp-content/uploads/2022/05/Halo-Infinite-season-2.jpg");
+  height: 1000px;
+}
+
+/* Header */
+
+#header  {
+  background-color: rgba(1,1,1,.85);
+  padding: 10px 20px;
+}
+
+svg {
+  height: 80px;
+  width: 150px;
+}
+
+.left-header {
+  flex: 3;
+  gap: 30px;
+}
+
+.left-header ul {
+  width: 80%;
+}
+
+.right-header {
+  flex: 1;
+  gap: 20px;
+}
+
+.yellow-border {
+  border: 1px solid rgb(249,192,28);
+  padding: 2px;
+  background-color: black;
+  width: fit-content;
+}
+
+.get-halo {
+  width: 164px;
+  height: 45px;
+  background-color: rgb(249,192,28);
+  color: black;
+  font-size: 14pt;
+}
+
+.arrow-icon {
+  height: 20px;
+  width: 20px;
+}
+
+/* MAIN */
+
+#main {
+  /* border: 2px solid cyan; */
+  width: 700px;
+  margin-left: 10%;
+  margin-top: 30px;
+  background-color: rgba(1,1,1,.5);
+}
+
+#main h1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#main p {
+  margin-bottom: 50px;
+}
+
+#main .consoles {
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#main .console {
+  width: 75px;
+  height: 30px;
+  background-color: blanchedalmond;
+}
+
+#main h3 {
+  margin-bottom: 20px;
+}
+
+#main a {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#main div {
+  margin-bottom: 40px;
+}

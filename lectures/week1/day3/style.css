@@ -44,12 +44,15 @@
 }
 
 #logo {
-  width: 25%;
+  /* width: 25%; */
   gap: 20px;
+  flex: 1;
 }
 
 #nav {
-  width: 40%;
+  /* width: 40%; */
+  flex: 2;
+  margin-left: 20px;
 }
 
 #nav li {
