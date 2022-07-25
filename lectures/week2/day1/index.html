@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS and the DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <h3>General Kenobi</h3>
+    <button onclick="subscribe(this)" id="btn1">Subscribe 1</button>
+    <button onclick="subscribe(this)" id="btn2">Subscribe 2</button>
+    <button onclick="subscribe(this)" id="btn3">Subscribe 3</button>
+    <p onclick="changeColor(this)">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum
+      dignissimos error, non reiciendis obcaecati mollitia magni blanditiis eum
+      odio optio, consequatur ullam itaque dolor veniam ea consectetur voluptate
+      ex!
+    </p>
+    <p onclick="changeColor(this)" on>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum
+      dignissimos error, non reiciendis obcaecati mollitia magni blanditiis eum
+      odio optio, consequatur ullam itaque dolor veniam ea consectetur voluptate
+      ex!
+    </p>
+    <p onclick="changeColor(this)">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum
+      dignissimos error, non reiciendis obcaecati mollitia magni blanditiis eum
+      odio optio, consequatur ullam itaque dolor veniam ea consectetur voluptate
+      ex!
+    </p>
+    <a href="#" onmouseover="showDiv(this)" onmouseout="hideDiv(this)"
+      >Reptiles</a
+    >
+
+    <div id="box" onclick="console.log(this)">
+      <button onmouseover="changeBoxColor('pink', this)">Pink</button>
+      <button onmouseover="changeBoxColor('blanchedalmond')">
+        Blanched Almond
+      </button>
+      <button onmouseover="changeBoxColor('green')">Green</button>
+      <button onmouseover="changeBoxColor('blue')">Blue</button>
+      <button onmouseover="changeBoxColor('chartreuse')">Chartreuse</button>
+    </div>
+
+    <label>I would like to eat </label>
+    <select onchange="console.log(this)">
+      <option>Tacos</option>
+      <option>Pasta</option>
+      <option>Sushi</option>
+    </select>
+
+    <div class="card">
+      <p>Hello my name is:</p>
+      <h3 id="name-tag">Example</h3>
+    </div>
+    <input type="text" value="Example" oninput="console.log(this, this.value)" />
+    
+    <form action="" onsubmit="console.log('I have been submitted')">
+      <input type="button" value="I AM AN INPUT BUTTON">
+      <input type="submit" value="I AM INPUT TYPE SUBMIT">
+      <button>I AM BUTTON</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
