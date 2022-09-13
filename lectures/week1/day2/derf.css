@@ -1,0 +1,55 @@
+/*  Wild Card */
+/*  it targets everything */
+* {
+
+}
+
+h1 {
+  color: red;
+}
+
+a {
+  
+}
+
+/* p {
+  background-color: rebeccapurple;
+  color: white;
+} */
+
+/* Classes */
+/* allows us to apply CSS to anything with the class */
+/* we prefix classes with a period */
+.my-class {
+  background-color: blanchedalmond;
+  color: blue;
+}
+
+.my-font {
+  font-family: fantasy;
+  font-size: 48pt;
+  font-weight: bold;
+  font-style: italic;
+  color: maroon;
+}
+
+.text-blue {
+  color: darkblue; 
+}
+
+/* IDs */
+/* allow us to apply CSS to ONLY ONE THING */
+/*  we prefic IDs with a # */
+#title {
+  font-size: 12pt;
+  background-color: beige;
+  color: dodgerblue;
+}
+
+#thing1 p {
+  color: teal;
+}
+
+#thing2 p {
+  color: brown;
+}
