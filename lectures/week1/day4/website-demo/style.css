@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura', sans-serif;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Generic Classes */
+
+.flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Body */
+
+body {
+  background-image: url("https://i.ibb.co/1Rnk9nk/halo-infinite-lone-wolves-season-2-multiplayer-pc-games-3840x2160-8278.jpg");
+  background-size: cover;
+}
+
+/* Nav */
+
+nav {
+  background-color: rgba(1,1,1,.85);
+  padding: 30px 20px;
+}
+
+svg {
+  width: 170px;
+  height: 40px;
+}
+
+nav ul {
+  width: 60%
+}
+
+#nav-left {
+  flex: 4;
+  gap: 40px;
+}
+
+#nav-right {
+  flex: 1;
+  gap: 20px;
+  align-items: stretch;
+}
+
+#nav-right a {
+  padding: 10px;
+  background-color: rgb(20,20,20);
+}
+
+.yellow-border {
+  border: 1px solid rgb(249,192,28);
+  padding: 2px;
+  background-color: black;
+  width: fit-content;
+}
+
+.get-halo {
+  width: 164px;
+  height: 45px;
+  background-color: rgb(249,192,28);
+  color: black;
+  font-size: 14pt;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Main */
+
+
+main > div {
+  width: 600px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
