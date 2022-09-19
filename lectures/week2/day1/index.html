@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Event and DOM</title>
+  </head>
+  <body>
+    <h1 onclick="alertMe(this)">Hello There</h1>
+    <button onclick="console.log('test'); example(this)" id="btn1">Click Me 1</button>
+    <button onclick="example(this)" id="btn2">Click Me 2</button>
+    <button onclick="example(this)" id="btn3">Click Me 3</button>
+
+    <button onclick="turnOff(this)">On</button>
+    <button onclick="turnOff(this)">On</button>
+    <button onclick="turnOff(this)">On</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
