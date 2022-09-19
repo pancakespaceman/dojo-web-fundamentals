@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="https://placekeanu.com/200/200" alt="breathtaking" />
+        <h1>Planet Keanu</h1>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Contact Us</li>
+        <li>Sign in</li>
+      </ul>
+    </header>
+
+    <button onclick="addStyle()" id="btn1">Click me to add style</button>
+    <img
+      src="https://placekeanu.com/300/300"
+      alt="breathtaking"
+      onmouseover="setTimeout(addStyle, 200)"
+      onmouseout="setTimeout(removeStyle, 200)"
+    />
+
+    <div id="facts"></div>
+
+    <label>I would like to eat </label>
+    <select onchange="chooseLunch(this)">
+      <option>Tacos</option>
+      <option>Pasta</option>
+      <option>Sushi</option>
+    </select>
+
+    <div class="card">
+      <p>Hello my name is:</p>
+      <h3 id="name-tag">Example</h3>
+    </div>
+
+    <input type="text" value="Example" oninput="setName(this)" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
