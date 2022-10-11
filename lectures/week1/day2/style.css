@@ -1,0 +1,41 @@
+
+/* HTML Selectors */
+/* These target all of the html tag specified */
+h1 {
+  color: blue;
+}
+
+p {
+  color: teal;
+  background-color: wheat;
+}
+
+li {
+  font-size: 42pt;
+}
+
+/* Classes */
+/* allows us to apply CSS to anything that is given the class */
+/* denote class in our CSS with a period prefix */
+/* can be applied to ANY element, including the body */
+/* HTML elements can have as many classes as we want */
+.bg-red {
+  background-color: darkred;
+  border: 2px dotted lightgreen;
+  
+}
+
+.border-green {
+  border: 2px dotted lightgreen;
+}
+
+/* ID */
+/* allows us to apply CSS to ONE THING ONLY */
+/* denote ids in our CSS with a # period prefix */
+/* id can be given to any element, but only one element can have a given */
+#title {
+  font-size: 32pt;
+  background-color: blanchedalmond;
+  color: dodgerblue;
+  border: 1px solid red;
+}
