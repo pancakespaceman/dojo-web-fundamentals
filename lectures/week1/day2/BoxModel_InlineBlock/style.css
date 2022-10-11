@@ -1,0 +1,52 @@
+* {
+  background-color: black;
+  color: white;
+  font-family: fantasy;
+}
+
+.bg-seegreen {
+  background-color: seagreen;
+}
+
+.border {
+  border: 5px solid darkred;
+}
+
+.generic {
+  padding: 10px 20px;
+  margin-bottom: 100px;
+}
+
+p {
+  background-color: royalblue;
+  padding: 10px;
+  display: inline-block;
+}
+
+#thing {
+  border: 1px solid red; 
+  padding: 10px;
+  width: 500px;
+}
+
+img {
+  display: block;
+}
+
+.box1, .box2, .box3 {
+  width: 350px;
+  height: 500px;
+  background-color: teal;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.box1 {
+  height: 50px;
+}
+
+.box2 {
+  height: 150px;
+  /* vertical-align: top; */
+}

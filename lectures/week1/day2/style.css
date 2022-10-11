@@ -1,41 +1,37 @@
-
-/* HTML Selectors */
-/* These target all of the html tag specified */
-h1 {
-  color: blue;
+.container{
+  width: 950px;
+  background-color: silver;
+  margin: 0px auto;
+  /* My Code */
 }
-
-p {
-  color: teal;
-  background-color: wheat;
+.top-nav {
+  height: 150px;
+  background-color: green;
+  /* My Code */
 }
-
-li {
-  font-size: 42pt;
+.side-nav {
+  height: 300px;
+  width: 200px;
+  background-color: blue;
+  /* My Code */
 }
-
-/* Classes */
-/* allows us to apply CSS to anything that is given the class */
-/* denote class in our CSS with a period prefix */
-/* can be applied to ANY element, including the body */
-/* HTML elements can have as many classes as we want */
-.bg-red {
-  background-color: darkred;
-  border: 2px dotted lightgreen;
+.main {
+  height: 400px;
+  width: 700px;
+  background-color: red;
+  /* My Code */
+}
+.sub-content {
+  height: 200px;
+  width: 210px;
+  background-color: yellow;
+  /* My Code */
+}
+#advertisement {
+  height: 120px;
+  width: 660px;
+  background-color: purple;
+  /* My Code */
   
 }
 
-.border-green {
-  border: 2px dotted lightgreen;
-}
-
-/* ID */
-/* allows us to apply CSS to ONE THING ONLY */
-/* denote ids in our CSS with a # period prefix */
-/* id can be given to any element, but only one element can have a given */
-#title {
-  font-size: 32pt;
-  background-color: blanchedalmond;
-  color: dodgerblue;
-  border: 1px solid red;
-}
