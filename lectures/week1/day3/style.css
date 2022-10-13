@@ -1,0 +1,37 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: tan;
+  padding: 20px;
+  /* width: 50%; */
+  /* height: 700px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 20px */
+}
+
+img, h1, input, ul {
+  flex: 1;
+  margin-left: 20px;
+}
+
+h1 {
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  /* width: 40%; */
+  flex: 3;
+}
+
+li {
+  list-style-type: none;
+}

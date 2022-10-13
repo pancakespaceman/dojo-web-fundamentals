@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+}
+
+/* Generic CSS classes */
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+#wrapper {
+  background-image: url("https://www.nme.com/wp-content/uploads/2022/05/Halo-Infinite-season-2.jpg");
+  height: 1000px;
+}
+
+nav {
+  background-color: rgba(1, 1, 1, .85);
+}
+
+#logo {
+  width: 150px; 
+  height: 150px;
+}
+
+nav ul {
+  list-style-type: none;
+  flex: 3;
+}
+
+nav div {
+  flex: 2;
+
+  padding-right: 20px;
+  gap: 30px;
+}
+
+nav div button {
+  width: 150px;
+  color: black;
+  background-color: gold;
+}
+
+nav div a {
+  width: 100px;
+}
+
+/* Main Content */
+
+main {
+  margin-top: 50px;
+  margin-left: 8%;
+  background-color: rgba(1, 1, 1, .15);
+  width: 600px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid white;
+}
+
+.consoles {
+  list-style-type: none;
+}
+
+.numbers {
+  padding-bottom: 25px;
+  border-bottom: 2px solid white;
+}
+
+main h1 {
+  font-size: 38pt;
+  margin: 40px 0;
+}
