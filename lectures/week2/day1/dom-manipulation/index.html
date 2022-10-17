@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="test1">Tacos</h1>
+    <p id="p1">
+      Oh man I really want some tacos today. I'll have like 150000 tacos with al
+      pastor and cabeza and lengua and carne asada and plenty of cilantro and
+      onions
+    </p>
+    <p class="test1" id="p2">
+      Oh man I really want some tacos today. I'll have like 150000 tacos with al
+      pastor and cabeza and lengua and carne asada and plenty of cilantro and
+      onions
+    </p>
+    <p id="p3">
+      Oh man I really want some tacos today. I'll have like 150000 tacos with al
+      pastor and cabeza and lengua and carne asada and plenty of cilantro and
+      onions
+    </p>
+    <p id="p4">
+      Oh man I really want some tacos today. I'll have like 150000 tacos with al
+      pastor and cabeza and lengua and carne asada and plenty of cilantro and
+      onions
+    </p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Tacos-al-Pastor.jpg/800px-Tacos-al-Pastor.jpg"
+      alt="heaven"
+      onmouseover="cabeza(this)"
+      onmouseout="pastor(this)"
+    />
+    <button onclick="foo()">CLICK ME</button>
+
+    <div id="myBox" onclick="replaceMe()">
+      <p>Replace me</p>
+    </div>
+
+    <input type="text" name="blah" id="blah" oninput="blah(this)">
+
+    <script src="script.js"></script>
+  </body>
+</html>

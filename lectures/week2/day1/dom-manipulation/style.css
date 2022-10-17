@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: fantasy;
+  background-color: black;
+  color: aliceblue;
+}
+
+img {
+  height: 200px
+}
+
+button {
+  background-color: coral;
+  color: black;
+  padding: 6px;
+  border-radius: 25%;
+}  
+
+#myBox {
+  background-color: aqua;
+  padding: 10px;
+}
