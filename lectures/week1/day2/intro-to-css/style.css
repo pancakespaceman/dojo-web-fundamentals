@@ -1,0 +1,36 @@
+li {
+  background-color: green;
+}
+
+p {
+  border: 2px solid red;
+}
+
+/* Classes */
+/* Classes are resuable and allow us to 
+apply css to many different html elements */
+/* to make a class, we prefix with a period/dot */
+.bg {
+  background-color:blanchedalmond;
+} 
+.my-class {
+  background-color: rebeccapurple;
+  color: aliceblue;
+  border: 5px dotted yellowgreen;
+}
+
+.color {
+  color: maroon;
+}
+.border {
+  border: 5px dashed goldenrod;
+}
+
+/* ID */
+/* ID can only be applied to a single HTML element */
+/* this overwrites all other css */
+/* Using ids allows us to organize and structure our code */
+/* useful for JS to target a single element */
+#my-id {
+  background-color: dodgerblue;
+}
