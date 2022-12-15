@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Generic Classes */
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+
+.col-1 {
+  flex: 1;
+}
+.col-4 {
+  flex: 4;
+}
+
+/* Wrapper */
+
+#wrapper {
+  background-image: url("https://wallpaperaccess.com/full/910169.jpg");
+  background-size: contain;
+  height: 1500px;
+}
+
+/*  Navbar */
+
+#nav {
+  background-color: rgba(1, 1, 1, .9);
+  padding: 20px;
+  gap: 20%;
+}
+
+
+/* Nav Links */
+#nav-links {
+  list-style-type: none;
+}
+
+#logo {
+  height: 75px;
+  width: 175px;
+}
+
+/* Sign in button section */
+.get-halo {
+  padding: 20px;
+  background-color: gold;
+  color: black
+}
+
+/* Main Content */
+
+#main {
+  margin-top: 40px;
+  margin-left: 10%;
+  width: 500px;
+  background-color: rgba(1, 1, 1, .2);
+}
+
+.fancy-things {
+  padding: 20px 0px;
+}
+
+#main h1 {
+  padding-top: 40px;
+  border-top: 2px solid silver;
+}
