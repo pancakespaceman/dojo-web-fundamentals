@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title" 
+  onmouseover="buttonChange1()"
+  onmouseout="buttonChange2()"
+  >Hello there</h1>
+
+  <!-- <button onclick="properGreeting(this)">Say Hello</button> -->
+  <button onclick="properGreeting()">Say Hello</button>
+  <button onclick="foo()">CLICK ME</button>
+
+  <div id="main">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
