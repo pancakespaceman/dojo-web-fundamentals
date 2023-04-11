@@ -1,0 +1,53 @@
+/* Wildcard */
+/* targets everything, but has almost no weight */
+* {
+  font-family: sans-serif;
+  color:white;
+}
+
+/* HTML selectors */
+/* p {
+  background-color: blanchedalmond;
+  border: 3px solid maroon;
+} */
+
+body {
+  background-color: black;
+}
+
+
+/* Classes */
+/* allow for applying css to many things regardless of tag */
+/* classes are prefixed with a single dot (.) */
+.color-crimson {
+  color: crimson;
+}
+
+.my-first-class {
+  border: 5px dashed cyan;
+  height: 100px;
+  text-align: end;
+  color: lime;
+}
+
+
+.color-dodgerblue {
+  color: dodgerblue;
+}
+
+
+/* Ids */
+/* allows applying css to only one html element */
+/* overwrites previous css / takes priority / has more weight */
+/* ids are prefixed with a # */
+#title {
+  color: goldenrod;
+}
+
+
+
+/* Descendant Selector */
+/* allow for targeting children elements */
+#main-list li {
+  border: 1px solid red;
+}

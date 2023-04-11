@@ -1,0 +1,26 @@
+* {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  margin: 20px;
+  /* first value is for top/bottom */
+  /* second value is for right/left */
+  padding: 20px 40px;
+  border: 10px solid red;
+}
+
+p {
+  padding: 10px 20px;
+  border: 1px solid red;
+  display: inline-block;
+  width: 200px;
+}
+
+.box {
+  border: 1px solid dodgerblue;
+  background-color: rebeccapurple;
+  padding: 20px 40px;
+}
