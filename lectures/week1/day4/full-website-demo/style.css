@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+* {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+  color: white;
+}
+
+/* Generic Classes */
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.font-size {
+  font-size: 2rem;
+}
+
+/* Body */
+
+body {
+  background-image: url(https://wpassets.halowaypoint.com/wp-content/2023/03/vNext-MBI-Infinite-Hero-Desktop-WU-64077075cc409-scaled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navbar */
+
+nav {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Nav Left */
+
+#nav-left {
+  list-style-type: none;
+  width: 60%;
+  gap: 10px;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+}
+
+.arrow {
+  margin-left: 15px;
+}
+
+/* Nav Right */
+
+#nav-right {
+  width: 10%;
+}
+
+#nav-right button {
+  background-color: rgb(249, 192, 28);
+}
+
+/* Main */
+
+main {
+  padding: 50px 10%;
+}
+
+/* Info Bar */
+
+#info-bar {
+  gap: 50px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding-left: 5%;
+}
+
+/* Description */
+
+#description {
+  width: 600px;
+}
+
+#description h1 {
+  margin: 50px 0px;
+}
+
+#description p {
+  margin: 20px 0px;
+}
+
+#consoles {
+  list-style-type: none;
+  gap: 25px;
+}
+
+#description div {
+  gap: 25px;
+}
