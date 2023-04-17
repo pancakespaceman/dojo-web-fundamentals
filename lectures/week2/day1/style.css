@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  color-scheme: dark;
+  font-family: fantasy;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 20px;
+}
+
+p {
+  padding: 20px;
+  background-color: coral;
+}
+
+ul {
+  margin-top: 30px;
+  padding: 40px;
+  background-color: lightseagreen;
+}
+
+li {
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+#title {
+  background-color: blueviolet;
+}

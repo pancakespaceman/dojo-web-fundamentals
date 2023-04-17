@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title" class="text-center">The Keanu Reeves Experience</h1>
+    <img
+      id="banner"
+      src="https://placekeanu.com/400"
+      alt="breathtaking"
+      class="center block"
+      onclick="grabBySelector('h1')"
+    />
+
+    <button onclick="changeImage('banner')">Change the Banner Picture</button>
+
+    <button onclick="grabById('p1')">
+      Click me if you think Keanu is breathtaking
+    </button>
+    <button onclick="grabById('p2')">
+      Click me if you think Keanu is breathtaking
+    </button>
+    <button onclick="grabById('p3')">
+      Click me if you think Keanu is breathtaking
+    </button>
+    <button onclick="grabById('p4')">
+      Click me if you think Keanu is breathtaking
+    </button>
+
+    <p id="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti,
+      eveniet iusto quae modi maxime sint reiciendis facere! Vero est quisquam
+      vitae sed similique eum labore tempora amet possimus minus.
+    </p>
+    <p id="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti,
+      eveniet iusto quae modi maxime sint reiciendis facere! Vero est quisquam
+      vitae sed similique eum labore tempora amet possimus minus.
+    </p>
+    <p id="p3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti,
+      eveniet iusto quae modi maxime sint reiciendis facere! Vero est quisquam
+      vitae sed similique eum labore tempora amet possimus minus.
+    </p>
+    <p id="p4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corrupti,
+      eveniet iusto quae modi maxime sint reiciendis facere! Vero est quisquam
+      vitae sed similique eum labore tempora amet possimus minus.
+    </p>
+    <ul onclick="getHTML(this)">
+      <li onclick="removeElem(this)">Justice</li>
+      <li onclick="removeElem(this)">vodka</li>
+      <li onclick="removeElem(this)">wheatgrass shots</li>
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
