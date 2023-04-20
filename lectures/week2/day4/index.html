@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIs</title>
+    <link rel="stylesheet" href="generic.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-center mt-4">Choose your Pokemon!</h1>
+    <p>hello there</p>
+
+    <div id="search" class="flex justify-between">
+      <input
+        type="text"
+        placeholder="Enter pokemon name..."
+        oninput="changePokeName(this)"
+      />
+      <button onclick="getPokemon()">Search!</button>
+    </div>
+
+    <main></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

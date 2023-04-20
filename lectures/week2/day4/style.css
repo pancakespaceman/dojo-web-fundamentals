@@ -1,0 +1,25 @@
+* {
+  font-family: fantasy;
+}
+
+#search {
+  border: 2px solid black;
+  padding: 3rem 5rem;
+  width: 30%;
+  margin: 5rem auto;
+}
+
+#search input {
+  border: 1px solid black;
+  padding: 1rem;
+  width: 60%;
+}
+
+#search button {
+  border: 1px solid darkblue;
+  background-color: dodgerblue;
+  padding: 1rem;
+  color: white;
+  box-shadow: black 5px 3px;
+  border-radius: 20%;
+}
