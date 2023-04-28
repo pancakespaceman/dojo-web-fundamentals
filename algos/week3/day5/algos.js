@@ -17,8 +17,13 @@ const expectedA1 = [30, 40, 50];
  * @param {Array<number>} nums2
  * @returns {Array<number>} The column sums.
  */
-function sumArrColumns(nums1, nums2) {
-  // code here
+function sumArrColumns(nums1 = [], nums2 = []) {
+  const summedCols = [];
+
+  for (let i = 0; i < nums1.length; i++) {
+    summedCols.push(nums1[i] + nums2[i]);
+  }
+  return summedCols;
 }
 
 /*****************************************************************************/
@@ -71,4 +76,58 @@ After 4 rotations it is back to it's original order again.
  * @param {number} k The amount of times to rotate the last item to the front.
  * @returns {Array<number>} The given array after being rotated.
  */
-function rotate(nums, k) {}
+function rotate(nums, k) {
+  k = k % nums.length;
+  if (k === 0) {
+    return nums;
+  }
+  var temp;
+  for (var i = k; i > 0; i--) {
+    for (var j = nums.length - 1; j > 0; j--) {
+      temp = nums[j];
+      nums[j] = nums[j - 1];
+      nums[j - 1] = temp;
+    }
+  }
+  return nums;
+}
+
+function rotate(nums, k) {
+  const rotateAmnt = k % nums.length;
+  const numsToRotate = nums.splice(nums.length - rotateAmnt, rotateAmnt);
+  nums.splice(0, 0, ...numsToRotate);
+  return nums;
+}
+
+function rotate2(nums, k) {
+  const rotateAmnt = k % nums.length;
+  const temp = nums.slice(nums.length - rotateAmnt);
+
+  for (let i = 0; i < nums.length; i++) {
+    if (temp.length < nums.length) {
+      // this num is being overwritten and needs to be saved.
+      temp.push(nums[i]);
+    }
+    nums[i] = temp[i];
+  }
+  return nums;
+}
+
+function rotateByReversing(nums, k) {
+  const rotateAmnt = k % nums.length;
+  if (rotateAmnt > 0) {
+    reverse(nums, 0, nums.length);
+    reverse(nums, 0, rotateAmnt);
+    reverse(nums, rotateAmnt);
+  }
+  return nums;
+}
+
+function reverse(arr, start = 0, end = arr.length) {
+  while (start < end) {
+    [arr[start], arr[end - 1]] = [arr[end - 1], arr[start]];
+    start++;
+    end--;
+  }
+  return arr;
+}
