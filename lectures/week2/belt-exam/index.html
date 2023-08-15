@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belt Demo</title>
+    <link rel="stylesheet" href="myLibrary.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex justify-between items-center pt-1 pb-1 pr-4 pl-4">
+      <!-- Left Header -->
+      <div id="header-left" class="flex justify-between items-center">
+        <img src="https://placekeanu.com/40/40" alt="breathtaking" />
+        <h1>CodeIt</h1>
+        <div class="flex gap-2">
+          <input
+            type="text"
+            placeholder="search"
+            class="col-4"
+            id="searchbar"
+          />
+          <button onclick="myAlert()" class="col-1 bg-orange">Go</button>
+        </div>
+      </div>
+
+      <!-- Right Header -->
+      <div id="header-right" class="flex gap-4">
+        <button class="col-1 pt-1 pb-1 bg-blue">Get App</button>
+        <button class="col-1 pt-1 pb-1 bg-orange">Log In</button>
+      </div>
+    </header>
+
+    <!-- Place Below Header -->
+    <div id="place-below-header">
+      <!-- Place Below Header Top -->
+      <div id="place-below-header-top" class="flex gap-4 items-center mb-3">
+        <img src="https://placekeanu.com/100/100" alt="breathtaking" />
+        <h1>c/Dojo</h1>
+        <button onclick="this.remove()" class="pt-2 pb-2 pr-4 pl-4 bg-red">
+          Join
+        </button>
+      </div>
+
+      <!-- Place Below Header Bottom -->
+      <div id="place-below-header-bottom" class="flex gap-5">
+        <p class="underline text-red">posts</p>
+        <p>Wiki</p>
+        <p>c/Dojo</p>
+        <p>Discord</p>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main class="flex justify-between items-center pt-2 gap-5">
+      <!-- Left Main -->
+      <div id="main-left" class="col-5">
+        <div class="post flex p-2 gap-2 mb-3">
+          <div class="post-left">
+            <img
+              onclick="like('#likes1')"
+              src="https://placedog.net/25/25"
+              alt="actually an up arrow"
+            />
+            <p id="likes1">29</p>
+            <img
+              onclick="dislike('#likes1')"
+              src="https://placekitten.com/25/25"
+              alt="actually a down arrow"
+            />
+          </div>
+          <div class="post-right">
+            <h2>Best of Project Week 2022!</h2>
+            <img src="https://placekeanu.com/300/200" alt="breathtaking" />
+            <div class="flex items-center">
+              <img src="https://placekeanu.com/25/25" alt="breathtaking" />
+              <p>42 comments</p>
+              <img src="https://placekeanu.com/25/25" alt="breathtaking" />
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <div class="post flex p-2 gap-2">
+          <div class="post-left">
+            <img
+              onclick="like('#likes2')"
+              src="https://placedog.net/25/25"
+              alt="actually an up arrow"
+            />
+            <p id="likes2">17</p>
+            <img
+              onclick="dislike('#likes2')"
+              src="https://placekitten.com/25/25"
+              alt="actually a down arrow"
+            />
+          </div>
+          <div class="post-right">
+            <h2>I use my cat as a rubber duck, is that weird?</h2>
+            <img src="https://placekeanu.com/300/200" alt="breathtaking" />
+            <div class="flex items-center">
+              <img src="https://placekeanu.com/25/25" alt="breathtaking" />
+              <p>16 comments</p>
+              <img src="https://placekeanu.com/25/25" alt="breathtaking" />
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Main -->
+      <div id="main-right" class="col-4">
+        <div class="info-box">
+          <h2 class="bg-red solid p-1">About the Dojo</h2>
+          <p class="pl-2">
+            Changing Lives with Code and a dedicated community of debuggers!
+          </p>
+        </div>
+        <div class="info-box">
+          <h2 class="bg-red solid p-1">Discord</h2>
+          <button class="pl-2">discord.gg/cdojo</button>
+        </div>
+        <div class="info-box">
+          <h2 class="bg-red solid p-1">c/Dojo Rules</h2>
+          <ol class="pl-2">
+            <li>Follow the 20 Minute Rule!</li>
+            <li>Don't compare yourself to others!</li>
+            <li>Learn Actively</li>
+            <li>Don't Chase Best Practices (Yet)</li>
+            <li>When you're behind, ask for help!</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

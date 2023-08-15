@@ -1,0 +1,64 @@
+/* Colors */
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-blue {
+  background-color: dodgerblue;
+}
+
+.bg-red {
+  background-color: crimson;
+}
+
+/* border */
+
+.solid {
+  border: 1px solid black;
+}
+
+/* Header */
+
+header {
+  background-color: gray;
+}
+
+#header-left {
+  width: 35%;
+}
+#header-left div {
+  width: 60%;
+}
+
+#header-right {
+  width: 20%;
+}
+
+/* Place Below Header */
+
+#place-below-header {
+  padding-top: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/* Main */
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: lightgrey;
+}
+
+.post,
+.info-box {
+  background-color: white;
+}
+
+#main-left,
+#main-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 700px;
+}

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+  background-color: black;
+  color: white;
+}
+
+
+/* Generic CSS */
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+/* Header */
+
+header {
+  padding: 20px 15%;
+  background-color: mediumseagreen;
+}
+
+header ul {
+  list-style-type: none;
+  width: 60%;
+}
+
+/* Main */
+
+main {
+  padding: 20px 15%;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+
+.box {
+  padding: 20px 30px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+
+
+.test {
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  background-color: rebeccapurple;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid silver;
+  border-radius: 50%;
+}

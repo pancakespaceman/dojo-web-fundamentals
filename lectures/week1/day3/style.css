@@ -1,0 +1,49 @@
+* {
+  font-family: fantasy;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+.parent {
+  background-color: darkturquoise;
+  padding: 30px;
+}
+
+.container {
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  background-color: mediumorchid;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  background-color: tomato;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+}
+.col-2 {
+  flex: 2;
+  margin-right: 10px;
+}

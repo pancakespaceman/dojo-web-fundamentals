@@ -1,0 +1,38 @@
+/* Wildcard */
+* {
+  font-family: fantasy;
+  background-color: aqua;
+}
+
+/* HTML Selector */
+/* selects all of a spefic HTML tag */
+h1 {
+  color: maroon;
+}
+
+h2 {
+  background-color: blanchedalmond;
+}
+
+
+/* Classes */
+/* Classes allow us to apply a set of CSS to many different HTML elements */
+/* Classes are denoted in CSS with a period prefix */
+.my-class {
+  text-align: right;
+  background-color: goldenrod;
+}
+
+.my-second-class {
+  color: dodgerblue;
+  font-size: 32pt;
+  text-align: center;
+}
+
+
+/* IDs */
+/* IDs allow us to apply a set of CSS to ONE THING and one thing only */
+/* IDs are denoted in CSS with a hashtag prefix */
+#my-id {
+  background-color: tomato;
+}
