@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Demo</title>
+    <style>
+      .search-button {
+        background-color: crimson;
+        border-radius: 10px;
+        color: white;
+      }
+      input {
+        border: 1px solid black;
+      }
+      main img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-center py-2 mb-5">Choose your Pokemon!</h1>
+
+    <section class="text-center">
+      <input
+        oninput="changePokeName(this)"
+        type="text"
+        class="py-2 px-4"
+        placeholder="Enter pokemon name..."
+      />
+      <button onclick="findThatPokemon()" class="py-2 px-4 search-button">Find that pokemon!</button>
+    </section>
+
+    <!-- THIS DIV IS EMPTY -->
+    <main></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
