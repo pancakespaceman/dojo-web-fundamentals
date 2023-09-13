@@ -1,0 +1,13 @@
+* {
+  font-family: sans-serif;
+}
+
+p {
+  background-color: blanchedalmond;
+  padding: 10px;
+}
+
+ul {
+  outline: 1px solid red;
+  padding: 10px;
+}

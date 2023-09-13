@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belt Exam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex justify-between items-center">
+      <!-- Left Header -->
+      <div id="left-header" class="flex justify-between items-center">
+        <!-- <img src="https://placekitten.com/75/75" alt="pretty kitty" /> -->
+        <h1>CodeIt</h1>
+        <input type="text" id="search" placeholder="search" oninput="searchInput(this)"/>
+        <button class="btn-orange" onclick="search2('#search')">Go</button>
+      </div>
+
+      <!-- Right Header -->
+      <div id="right-header" class="flex justify-between items-center">
+        <button class="btn btn-blue">Get App</button>
+        <button class="btn btn-orange">Log In</button>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <div id="banner">
+      <!-- Top Banner -->
+      <div id="top-banner" class="flex items-center">
+        <img src="https://placekitten.com/150/150" alt="pretty kitty" />
+        <h1>c/Dojo</h1>
+        <button class="btn btn-red" onclick="removeButton(this)">Join</button>
+      </div>
+
+      <!-- Bottom Banner -->
+      <ul id="bottom-banner" class="flex items-center">
+        <li class="active">Posts</li>
+        <li>Wiki</li>
+        <li>c/Dojo</li>
+        <li>Discord</li>
+      </ul>
+    </div>
+
+    <!-- Main -->
+    <main class="flex justify-between">
+      <!-- Left Column -->
+      <div id="left-column" class="col-2">
+        <div class="post flex justify-between">
+          <div class="col-1">
+            <p class="text-center arrow" onclick="like('#like1')">&#8593;</p>
+            <p class="text-center likes" id="like1">29</p>
+            <p class="text-center arrow">&#8595;</p>
+          </div>
+
+          <div class="col-4">
+            <h1>Best of Project Week 2022!</h1>
+            <img src="https://placekitten.com/400/200" alt="pretty kitty" />
+            <p>
+              <img src="./comment.png" alt="text bubble" class="icon"/>
+              42 comments 
+              <span class="icon">&#8594;</span>  
+              Share
+            </p>
+          </div>
+        </div>
+
+        <div class="post flex justify-between">
+          <div class="col-1">
+            <p class="text-center arrow" onclick="like('#like2')">&#8593;</p>
+            <p class="text-center likes" id="like2">17</p>
+            <p class="text-center arrow">&#8595;</p>
+          </div>
+
+          <div class="col-4">
+            <h1>I use my cat as a rubber duck, is that weird?</h1>
+            <img src="https://placekitten.com/400/200" alt="pretty kitty" />
+            <p>
+              <img src="./comment.png" alt="text bubble" class="icon"/>
+              16 comments 
+              <span class="icon">&#8594;</span> 
+              Share
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div id="right-column" class="col-1 flex flex-column justify-between">
+        <div class="info-box col-1">
+          <h2>About the Dojo</h2>
+          <p class="info-bottom">
+            Changing Lives with Code and a dedicated community of debuggers!
+          </p>
+        </div>
+
+        <div class="info-box col-1">
+          <h2>Discord</h2>
+          <div class="info-bottom flex justify-center items-center">
+            <button class="col-1">discord.gg/cdojo</button>
+          </div>
+        </div>
+
+        <div class="info-box col-1">
+          <h2>c/Dojo Rules</h2>
+          <div class="info-bottom">
+            <p>1. Follow the 20 Minute rule</p>
+            <p>2. Don't compare yourself to others!</p>
+            <p>3. Learn Actively</p>
+            <p>4. Don't Chase Best Practices (Yet)</p>
+            <p>5. When you're behind, ask for help!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

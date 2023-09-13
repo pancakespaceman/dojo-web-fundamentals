@@ -1,0 +1,62 @@
+* {
+  font-family: fantasy;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  outline: 3px solid red;
+}
+
+
+.container {
+  height: 400px;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  display: flex;
+  /* Align items moves things vertically in our flex box */
+  align-items: center; 
+  /* Justify Content moves things horizontally in our flex box */
+  justify-content: space-between;
+
+  /* Gap specify space between flex children */
+  /* works great when using the flex shorthand */
+  gap: 3%;
+}
+
+ul {
+  list-style-type: none;
+  outline: 1px solid blue;
+  padding: 10px;
+  background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+input {
+  width: 20%;
+}
+
+button {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.box {
+  background-color: green;
+  height: 300px;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+.col-3 {
+  flex: 3;
+}

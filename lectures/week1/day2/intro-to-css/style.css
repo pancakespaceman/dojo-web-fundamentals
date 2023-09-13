@@ -1,0 +1,41 @@
+/* Wildcard */
+* {
+  font-family: sans-serif;
+}
+
+/* HTML Selectors */
+
+h1 {
+  color: green;
+  font-family: fantasy;
+}
+
+body {
+  background-color: lightgray;
+}
+
+p {
+  font-weight: bold;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  background-color: blanchedalmond;
+  color: tomato;
+}
+
+/* Class Selector */
+/* syntax: period then class name */
+.text-dogerblue {
+  color: dodgerblue;
+}
+
+.bg-red {
+  background-color: maroon;
+}
+
+
+/* ID Selector */
+/* syntax: hashtag then id name */
+#title {
+  background-color: aqua;
+  color: gold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

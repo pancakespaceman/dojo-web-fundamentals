@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+/* General CSS */
+
+.flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-start {
+  align-items: flex-start;
+}
+
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.col-3 {
+  flex: 3;
+}
+.col-4 {
+  flex: 4;
+}
+.col-5 {
+  flex: 5;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Header */
+
+header {
+  background-color: darkgray;
+  padding: 10px 30px 10px 20px;
+}
+
+#left-header {
+  width: 30%;
+}
+
+#left-header button {
+  padding: 5px 15px;
+  box-shadow: 5px 3px;
+  border: 2px solid black;
+}
+
+#right-header {
+  width: 15%;
+}
+
+.btn-blue {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.btn-orange {
+  background-color: orange;
+}
+
+.btn-red {
+  background-color: crimson;
+  color: white;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+/* Banner */
+
+#banner {
+  padding: 40px 15% 5px 15%;
+}
+
+#top-banner {
+  gap: 3%;
+  margin-bottom: 15px;
+}
+
+#top-banner img {
+  height: 80px;
+  border-radius: 50%;
+}
+
+
+#bottom-banner {
+  gap: 5%;
+}
+
+.active {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Main */
+
+main {
+  padding: 5px 15% 0px 15%;
+  background-color: lightgray;
+  gap: 7%;
+}
+
+/* Left Column */
+
+.post {
+  background-color: white;
+  padding: 25px;
+  border: 2px solid gray;
+  margin-bottom: 30px;
+}
+
+.icon {
+  height: 25px;
+}
+
+.arrow {
+  font-size: xx-large;
+}
+
+.likes {
+  font-size: x-large;
+}
+
+/* Right Column */
+
+
+.info-box h2 {
+  background-color: crimson;
+  color: white;
+  padding: 10px 20px;
+  border: 3px solid black;
+}
+
+.info-bottom {
+  padding: 10px 20px 40px 10px;
+  background-color: white;
+  border-bottom: 2px solid gray;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+}
+
+.info-bottom button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

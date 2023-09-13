@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center">
+      <h1>Souper Heros</h1>
+      <ul class="d-flex justify-content-between align-items-center">
+        <li onclick="" id="li1">HOME</li>
+        <li onclick="" id="li2">STORE</li>
+        <li onclick="" id="li3">ABOUT US</li>
+      </ul>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="d-flex justify-content-between align-items-center box">
+        <div class="col-1">
+          <h2 id="souper" onclick="bar('#cucumber')">Souper Cucumber</h2>
+          <img src="./supercumber.jpg" alt="souper cucumber" id="cucumber" />
+        </div>
+        <ul class="col-2">
+          <li onclick="foo(this)">Minestrone</li>
+          <li onclick="foo(this)">French Onion</li>
+          <li onclick="foo(this)">Sauerkraut Soup</li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between align-items-center box">
+        <div class="col-1">
+          <h2 id="brock" onclick="bar('#broc')">
+            Brock, the gym leader from pokemon
+          </h2>
+          <img src="./soup-broc.jpg" alt="soup broc" id="broc" />
+        </div>
+        <ul class="col-2" onclick="foo(this)">
+          <li>Minestrone</li>
+          <li>French Onion</li>
+          <li>Sauerkraut Soup</li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between align-items-center box">
+        <div class="col-1">
+          <h2 id="beetman" onclick="bar('#beet')">Beetman</h2>
+          <img src="./beetman.jpg" alt="beetman" id="beet" />
+        </div>
+        <ul class="col-2" id="soup-list3">
+          <li>Borscht</li>
+          <li>French Onion</li>
+          <li>Sauerkraut Soup</li>
+        </ul>
+      </div>
+    </main>
+
+    <button class="test" onclick="bar()">Click me</button>
+
+    <label>I would like to eat </label>
+    <select onchange="chooseLunch(this)">
+      <option>Tacos</option>
+      <option>Pasta</option>
+      <option>Sushi</option>
+    </select>
+
+    <input type="text" value="Example" oninput="setName(this)">
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

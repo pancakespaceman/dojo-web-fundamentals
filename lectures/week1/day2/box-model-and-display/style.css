@@ -1,0 +1,47 @@
+* {
+  font-family: fantasy;
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+h1, p, button {
+  background-color: blanchedalmond;
+  color:rebeccapurple;
+}
+
+h1 {
+  margin-bottom: 50px;
+  padding-left: 5%;
+}
+p {
+  /* padding-left: 5%; */
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  padding: 20px 30px;
+  /* margin-bottom: 15px; */
+  margin-right: 20px;
+  /* width: 200px; */
+  display: inline-block;
+}
+
+/* .p {
+  padding: 20px;
+} */
+
+/* .vertical-margin-test {
+  margin-top: 30px;
+} */
+
+.box {
+  border: 1px solid red;
+  padding: 40px;
+}
+
+
+.nav {
+  padding: 10px;
+  background-color: #242F3E;
+}
+
