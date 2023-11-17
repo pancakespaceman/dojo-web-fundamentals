@@ -1,0 +1,12 @@
+* {
+  border: 0px none;
+  outline: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  padding: 20px;
+  background-color: chartreuse;
+  font-size: larger;
+}

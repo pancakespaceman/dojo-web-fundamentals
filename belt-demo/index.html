@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belt Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="flex justify-between items-center">
+      <!-- Left side of nav -->
+      <div class="left-nav flex items-center">
+        <img src="https://placekitten.com/50/50" alt="pretty kitty" />
+        <h1>CodeIt</h1>
+        <input type="text" placeholder="search" oninput="inputData(this)" />
+        <button class="btn-yellow" onclick="showInputString()">Go</button>
+      </div>
+
+      <!-- Right side of nav -->
+      <div class="right-nav flex items-center">
+        <button class="btn btn-blue">Get App</button>
+        <button class="btn btn-yellow">Log In</button>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="flex items-center">
+        <img src="https://placekitten.com/100/100" alt="pretty kitty" />
+        <h1>c/Dojo</h1>
+        <button onclick="removeElem(this)" class="btn btn-red">Join</button>
+      </div>
+      <ul class="flex items-center">
+        <li>Posts</li>
+        <li>Wiki</li>
+        <li>c/Dojo</li>
+        <li>Discord</li>
+      </ul>
+    </header>
+
+    <!-- Main -->
+    <main class="flex">
+      <!-- Left column of Main -->
+      <div class="left-main col-2 flex flex-column gap-5">
+        <div class="post flex justify-between">
+          <div class="likes">
+            <img onclick="increaseLikes('likes1')" src="https://placekeanu.com/50/50" alt="breathtaking" />
+            <p id="likes1">29</p>
+            <img src="https://placekeanu.com/50/50" alt="breathtaking" />
+          </div>
+
+          <div class="post-content">
+            <h2>Best of Project Week 2022!</h2>
+            <img src="https://placekitten.com/450/250" alt="pretty kitty" />
+            <p class="flex items-center">
+              <img src="https://placedog.net/50/50" alt="goodest boi" />
+              42 comments
+              <img src="https://placedog.net/50/50" alt="goodest boi" />
+              Share
+            </p>
+          </div>
+        </div>
+        <div class="post flex justify-between">
+          <div class="likes">
+            <img onclick="increaseLikes('likes2')" src="https://placekeanu.com/50/50" alt="breathtaking" />
+            <p id="likes2">17</p>
+            <img src="https://placekeanu.com/50/50" alt="breathtaking" />
+          </div>
+
+          <div class="post-content">
+            <h2>I use my cat as a rubber duck, is that weird?</h2>
+            <img src="https://placekitten.com/450/250" alt="pretty kitty" />
+            <p class="flex items-center">
+              <img src="https://placedog.net/50/50" alt="goodest boi" />
+              16 comments
+              <img src="https://placedog.net/50/50" alt="goodest boi" />
+              Share
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column of Main -->
+      <div class="right-main col-1 flex flex-column gap-5">
+        <div class="info-box">
+          <h2>About the Dojo</h2>
+          <div>
+            <p>
+              Changing Lives with Code nd a dedicated community of debuggers!
+            </p>
+          </div>
+        </div>
+        <div class="info-box">
+          <h2>Discord</h2>
+          <div>
+            <button>discord.gg/cdojo</button>
+          </div>
+        </div>
+        <div class="info-box">
+          <h2>c/Dojo Rules</h2>
+          <div>
+            <ol>
+              <li>Follow the 20 Minute Rule!</li>
+              <li>Don't compare yourself to others!</li>
+              <li>Learn Actively</li>
+              <li>Don't Chase Best Practices (Yet)</li>
+              <li>When you're behind, ask for help!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
