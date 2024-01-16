@@ -1,0 +1,50 @@
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aquamarine;
+  background-color: gold;
+  border: 2px dashed maroon;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: burlywood;
+}
+
+
+/* Classes */
+/* allows us to apply CSS to any HTML elements we want */
+/* can and should be reused */
+/* can apply to different elements */
+/* classes override HTML selectors (only when the class has a property the html selector has) */
+/* syntax:  .className */
+.my-class {
+  background-color: blanchedalmond;
+  color: crimson;
+  font-family: 'Comic Sans MS';
+  border: 5px solid black;
+  font-size: xx-large;
+}
+
+.bg-blue {
+  background-color: dodgerblue;
+}
+
+.text-purple {
+  color: rebeccapurple;
+}
+
+/* ID */
+/* applies CSS to ONE and ONLY ONE HTML element */
+/* IDs override all other selectors */
+/* syntax: #idName */
+#my-id {
+  color: midnightblue;
+}
+
+#picture {
+  width: 200px;
+  height: 200px;
+}
