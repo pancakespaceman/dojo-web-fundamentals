@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Paprika';
+  color: white;
+  background-color: black;
+} 
+
+
+.container {
+  padding: 20px;
+  background-color: blanchedalmond;
+  /* Flex only applies to DIRECT CHILDREN. NOT grandchildren*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  /* gap: 5%; */
+}
+
+.other-div {
+  display: flex;
+}
+
+
+
+
+.box {
+  height: 200px;
+  background-color: bisque;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+.col, .col-2 {
+  background-color: brown;
+  height: 150px;
+  /* width: 150px; */
+  flex: 1;
+  border: 5px solid black;
+}
+
+.col-2 {
+  flex: 2;
+}

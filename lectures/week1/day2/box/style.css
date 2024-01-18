@@ -1,0 +1,48 @@
+* {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  border: 3px solid red;
+} 
+
+div {
+  margin-bottom: 10px;
+  border: 3px solid blueviolet;
+}
+
+button {
+  margin-right: 20px;
+  /* 15px top/bottom, 20px left/right */
+  padding: 15px 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* 
+.special-border {
+  border: 5px dashed cyan;
+}
+
+.p-1 {
+  padding: 10px;
+}
+
+.mb-1 {
+  margin-bottom: 100px;
+}  */
+
+p {
+  background-color: goldenrod;
+  width: 200px;
+  display: inline-block;
+}
