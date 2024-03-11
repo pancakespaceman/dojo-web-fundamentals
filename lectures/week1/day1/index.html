@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to HTML</title>
+  </head>
+  <body>
+    <h1>Hello there</h1>
+
+    <!-- HTML is, at its core, text that we use tags to describe how the page should look -->
+    <h3>General Kenobi</h3>
+
+    <!-- href="" is an example of an HTML attribtute -->
+    <!-- HTML attributes  -->
+    <p>
+      If you really like ducks, Here is a link I recommend
+      <a href="https://en.wikipedia.org/wiki/Mallard">Mallards</a>
+      if you don't like ducks, why are you here
+    </p>
+
+    <!-- Image -->
+    <img src="./imgs/wizard_possum.jpg" alt="possum wizard" />
+    <img src="https://placekeanu.com/200/200" alt="breathtaking" />
+    <img
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.gKDTvwrvYxedufgvJjVTdQHaEK%26pid%3DApi&f=1&ipt=f21789694fcc78fce34358968c59dd436220be5069e4b0f1f05ebd5725803c39&ipo=images"
+      alt="ferret"
+    />
+
+    <table>
+      <tr>
+        <th>Movie</th>
+        <th>Year</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>Up</td>
+        <td>2009</td>
+        <td>PG</td>
+      </tr>
+      <tr>
+        <td>The Matrix</td>
+        <td>1999</td>
+        <td>R</td>
+      </tr>
+    </table>
+
+    <!-- FORMS -->
+    <form action="/process" method="post">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" />
+      </div>
+
+      <div>
+        <input type="radio" name="font" value="bold" id="bold" />
+        <label for="bold"><strong>Bold</strong></label>
+        <input type="radio" name="font" value="normal" id="normal" />
+        <label for="normal">Normal</label>
+      </div>
+      <div>
+        <input type="radio" name="q1" value="5">
+        <label for="">5</label>
+        <input type="radio" name="q1" value="10">
+        <label for="">10</label>
+        <input type="radio" name="q1" value="42">
+        <label for="">42</label>
+      </div>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+  </body>
+</html>
