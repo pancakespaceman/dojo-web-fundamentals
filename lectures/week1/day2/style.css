@@ -1,0 +1,45 @@
+* {
+  color: white;
+  background-color: black;
+
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: blanchedalmond;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex property to add space between flex children */
+  gap: 20px;
+}
+
+.box {
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.block {
+  display: block;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  /* width: 30%; */
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
