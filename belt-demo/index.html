@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belt Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="flex justify-between items-center">
+      <div class="flex items-center justify-between gap-5">
+        <img src="https://placekeanu.com/75/75" alt="breathtaking" />
+        <h1>CodeIt</h1>
+        <div>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="search"
+            oninput="changeSearchText(this)"
+          />
+          <button class="bg-orange" onclick="displayAlert()">Go</button>
+        </div>
+      </div>
+
+      <div class="flex gap-3">
+        <button class="btn bg-blue">Get App</button>
+        <button class="btn bg-orange">Log In</button>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <div id="banner">
+      <div class="flex items-center gap-5">
+        <img src="https://placekeanu.com/100/100" alt="breathtaking" />
+        <h1>c/Dojo</h1>
+        <!-- <button class="btn bg-red" onclick="hide(this)">Join</button> -->
+        <button class="btn bg-red" onclick="this.remove()">Join</button>
+      </div>
+      <ul class="flex items-center gap-5">
+        <li class="active-link">Posts</li>
+        <li>Wiki</li>
+        <li>c/Dojo</li>
+        <li>Discord</li>
+      </ul>
+    </div>
+
+    <!-- Main -->
+    <main class="flex gap-5">
+      <!-- Left main column -->
+      <div id="left-col" class="col-3">
+        <!-- Post -->
+        <div class="post flex gap-3">
+          <div class="like flex flex-column">
+            <span onclick="like('#likes1')">&#8593;</span>
+            <span id="likes1">29</span>
+            <span>&#8595;</span>
+          </div>
+          <div class="content">
+            <h2>Best of Project Week 2022!</h2>
+            <img src="https://placekeanu.com/200/200" alt="breathtaking" />
+            <div>
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F7%2F7f%2FSpeech_bubble.svg%2F300px-Speech_bubble.svg.png&f=1&nofb=1&ipt=c52390857468b497129f9814b061c669f1f9bbe13f9fcbf7c6310f963f1afdfb&ipo=images"
+                alt="bubble"
+                class="icon"
+              />
+              <span>42 comments</span>
+              <span>&#8625;</span>
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post -->
+        <div class="post flex gap-3">
+          <div class="likes flex flex-column">
+            <span onclick="like('#likes2')">&#8593;</span>
+            <span id="likes2">17</span>
+            <span>&#8595;</span>
+          </div>
+          <div class="content">
+            <h2>I use my cat as a rubber duck, is that weird?</h2>
+            <img src="https://placekeanu.com/200/200" alt="breathtaking" />
+            <div>
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F7%2F7f%2FSpeech_bubble.svg%2F300px-Speech_bubble.svg.png&f=1&nofb=1&ipt=c52390857468b497129f9814b061c669f1f9bbe13f9fcbf7c6310f963f1afdfb&ipo=images"
+                alt="bubble"
+                class="icon"
+              />
+              <span>16 comments</span>
+              <span>&#8625;</span>
+              <span>Share</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right main column -->
+      <div id="right-col" class="col-2 flex flex-column gap-5">
+        <div class="info-box">
+          <h2 class="bg-red">About the Dojo</h2>
+          <div>
+            <p>
+              Chaning Lives with Code and a dedicated community of debuggers!
+            </p>
+          </div>
+        </div>
+        <div class="info-box">
+          <h2 class="bg-red">Discord</h2>
+          <div>
+            <button>discord.gg/cdojo</button>
+          </div>
+        </div>
+        <div class="info-box">
+          <h2 class="bg-red">c/Dojo Rules</h2>
+          <div>
+            <ol>
+              <li>Follow the 20 Minute Rule!</li>
+              <li>Don't compare yourself to others!</li>
+              <li>Learn Actively</li>
+              <li>Don't Chase Best Practices (Yet)</li>
+              <li>When you're behind, ask for help!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

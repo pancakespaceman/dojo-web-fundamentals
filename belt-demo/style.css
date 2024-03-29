@@ -1,0 +1,152 @@
+* {
+  border: 0px none;
+  outline: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+/* General / Utility */
+
+.flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-evenly {
+  justify-content: space-between;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-start {
+  align-items: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.col-3 {
+  flex: 3;
+}
+.col-4 {
+  flex: 4;
+}
+.col-5 {
+  flex: 5;
+}
+
+.gap-1 {
+  gap: 0.5em;
+}
+.gap-2 {
+  gap: 1em;
+}
+.gap-3 {
+  gap: 1.5em;
+}
+.gap-4 {
+  gap: 2em;
+}
+.gap-5 {
+  gap: 2.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.bg-red {
+  background-color: red;
+  color: white;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-blue {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Header */
+
+header {
+  background-color: gray;
+}
+
+/* Banner */
+
+#banner {
+  padding: 10px 10% 0 10%;
+}
+
+.active-link {
+  color: red;
+  text-decoration: underline;
+}
+
+#banner img {
+  border-radius: 50%;
+}
+
+/* Main */
+
+main {
+  background-color: lightgray;
+  padding: 10px 10% 0 10%;
+}
+
+.post {
+  background-color: white;
+  margin-bottom: 20px;
+  border: 3px solid gray;
+}
+
+.icon {
+  height: 15px;
+}
+
+.info-box {
+  border: 3px solid gray;
+}
+
+.info-box h2 {
+  padding: 5px 10px;
+}
+
+.info-box div {
+  background-color: white;
+  padding: 15px 30px;
+}

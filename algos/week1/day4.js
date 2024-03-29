@@ -21,7 +21,6 @@ function countEvenNegatives(nums) {}
 
 /*****************************************************************/
 
-
 /* 
 Write two functions:
 
@@ -37,11 +36,11 @@ of it.
 */
 
 /* Tests for capitalize function */
-let string1 = "hello";
-expected1 = "Hello";
+let string1 = 'hello';
+expected1 = 'Hello';
 
-let string2 = "";
-expected2 = "";
+let string2 = '';
+expected2 = '';
 
 /**
  * Capitalizes the first letter of the given string.
@@ -49,15 +48,58 @@ expected2 = "";
  * @returns {string} The given string with the first letter capitalized or an
  *    empty string.
  */
-function capitalize(string) {}
+function capitalize(string) {
+  // SETUP
+  // early exit - don't run the code if we dont need to
+  if (string.length < 1) {
+    return '';
+  }
+
+  // WORK
+
+  // how do I capitalize a string in JS? -> string.toUpperCase()
+  // how do i grab just the first character in a string in JS? -> string.charAt(0) -- string[0]
+  // how do I grab the rest of the string js? -> string.slice(1) string.substr(1)
+
+  // grab the first character, uppercase it, and concat (add) it to the rest of the original string
+  var returnString = string.charAt(0).toUpperCase() + string.slice(1);
+
+  // RETURN
+  return returnString;
+}
 
 /* Tests for capitalization function */
-let strings1 = ["hello", "world"];
-let expectedStrings1 = ["Hello", "World"];
+let strings1 = ['hello', 'world'];
+let expectedStrings1 = ['Hello', 'World'];
 
 /**
  * Capitalizes the first letter of each string in the given array.
  * @param {Array<string>} strings
  * @returns {Array<string>} The same given array with updated items.
  */
-function capitalization(strings) {}
+function capitalization(strings) {
+  // PSEUDOCODE
+  // writing out the steps in english
+  // SETUP
+  // make an extra varialbe to hold a new array/string or hold a counter
+
+  // WORK
+  // what do I need to use to go through an array? a loop!
+  // assign the strings[i] with the capitalized version of that string
+  for (let i = 0; i < strings.length; i++) {
+    strings[i] = capitalize(strings[i]); // 'Shawn'
+  }
+
+  // RETURN
+  return strings;
+}
+
+console.log(capitalization(['shawn', 'converse']));
+console.log(capitalization(['peter', 'monaco']));
+console.log(capitalization(['johnny', 'sacco']));
+console.log(capitalization(strings1));
+
+var word1 = 'shawn';
+var word1 = 'giraffe';
+
+console.log(word1);
