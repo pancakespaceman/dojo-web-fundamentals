@@ -39,10 +39,28 @@
       inventore ullam ipsum.
     </p>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum placeat
-      itaque expedita quod atque praesentium repellendus est nulla. Sit libero
-      minus aut vitae laboriosam aliquid magni ea, dolore inventore mollitia.
-    </p>
+    <!-- Self closing tag -->
+    <img src="https://placekeanu.com/200/200" alt="breathtaking" />
+
+    <form action="/process" method="post">
+      <div>
+        <label>Name: </label>
+        <input type="text" name="name" placeholder="Your name..." />
+      </div>
+      <div>
+        <label>Email: </label>
+        <input type="text" name="email" placeholder="Your email..." />
+      </div>
+      <div>
+        <input type="checkbox" name="offers" id="offers" checked />
+        <label for="offers">I would like to receive email offers!</label>
+      </div>
+      <input type="radio" name="font" value="bold" id="bold" />
+      <label for="bold"><strong>Bold</strong></label>
+      <input type="radio" name="somethingelse" value="normal" id="normal" />
+      <label for="normal">Normal</label>
+
+      <input type="submit" value="Sign Up!" />
+    </form>
   </body>
 </html>
