@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: fantasy;
+  color: white;
+}
+
+p {
+  font-size: x-large;
+  background-color: blanchedalmond;
+  border: 5px solid red;
+  margin-bottom: 20px;
+  color: black;
+  padding: 20px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.margin {
+  margin: 50px;
+}
+
+.padding {
+  padding: 50px;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+}
