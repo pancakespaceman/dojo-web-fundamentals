@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  /* Specifically between flex children we can add space with gap */
+  /* gap: 20px; */
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.container div {
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+}
