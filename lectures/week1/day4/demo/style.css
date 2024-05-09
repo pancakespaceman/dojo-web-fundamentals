@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Comic Sans MS";
+}
+
+/* Generic CSS */
+/* AKA Utility classes */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 0.5em;
+}
+.gap-2 {
+  gap: 1em;
+}
+.gap-3 {
+  gap: 1.5em;
+}
+.gap-4 {
+  gap: 2em;
+}
+.gap-5 {
+  gap: 2.5em;
+}
+
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.col-3 {
+  flex: 3;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+/* Navbar */
+nav {
+  background-color: #100c0b;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  width: 60%;
+  list-style-type: none;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+}
+
+.get-halo {
+  background-color: #ffc11d;
+  color: black;
+}
+
+.sign-in {
+  background-color: #141414;
+  color: white;
+}
+
+/* Main */
+
+main {
+  background-image: url("halo-infinite-c6.jpg");
+  height: 1100px;
+  background-size: cover;
+  padding-top: 300px;
+  padding-left: 100px;
+}
+
+.info-panel {
+  width: 600px;
+  color: white;
+  padding-top: 75px;
+  border-top: 2px solid white;
+}
