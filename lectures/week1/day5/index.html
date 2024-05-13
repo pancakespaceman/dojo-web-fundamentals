@@ -9,6 +9,28 @@
     <p onclick="foo()">Click me</p>
     <button>Don't Click me</button>
 
+    <p>First Name: {{ user["name" }}</p>
+
+    <h2>My Orders</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order Number</th>
+          <th>Number of Items</th>
+          <th>Order Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ for loop through user Orders
+        <tr>
+          <td>userOrder["number"]</td>
+          <td>userOrder["numberOfItems"]</td>
+          <td>userOrder["orderTotal"]</td>
+        </tr>
+        }}
+      </tbody>
+    </table>
+
     <script src="script.js"></script>
   </body>
 </html>
