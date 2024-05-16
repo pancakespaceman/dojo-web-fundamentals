@@ -89,7 +89,7 @@ Exam code will be sent out over email
 
 - prepare your project before
 - what to prioritize
-  - cannot pass without at least 1 JS feature
+  - cannot pass without at least 1 JS feature 1 feat = 1.25, 2 feat = 2, 3 feat = 2.5
   - get all HTML content AND validate
 - Get Sleep
 - take small breaks away from your keyboard and phone
