@@ -1,10 +1,10 @@
-var smallerStringA1 = 'abcd'
-var smallerStringB1 = 'efg'
-var expected = 'efgabcd'
+var smallerStringA1 = "abcd";
+var smallerStringB1 = "efg";
+var expected = "efgabcd";
 
-var smallerStringA2 = 'sunnyside up eggs'
-var smallerStringB2 = 'biscuits and gravy'
-var expected = 'sunnyside up eggsbiscuits and gravy'
+var smallerStringA2 = "sunnyside up eggs";
+var smallerStringB2 = "biscuits and gravy";
+var expected = "sunnyside up eggsbiscuits and gravy";
 
 /**
  * Combine two given strings together with the smaller string being added
@@ -13,33 +13,31 @@ var expected = 'sunnyside up eggsbiscuits and gravy'
  * NOTE: How do we get the length of a string?
  * @returns {string} The combined strings.
  */
-function combineSmallerStringFirst(s1, s2) {}
+function combineSmallerStringFirst(s1, s2) {
+  // start writing our code
+}
 
-
-console.log(combineSmallerStringFirst(smallerStringA1, smallerStringB1))
-console.log(combineSmallerStringFirst(smallerStringA2, smallerStringB2))
-
-
+console.log(combineSmallerStringFirst(smallerStringA1, smallerStringB1));
+console.log(combineSmallerStringFirst(smallerStringA2, smallerStringB2));
 
 /************************************************************************************************/
 
+var stringToRepeat1 = "Birria Tacos";
+var numberToRepeat1 = 5;
+var repeatedExpected =
+  "Birria TacosBirria TacosBirria TacosBirria TacosBirria Tacos";
 
-
-var stringToRepeat1 = 'Birria Tacos'
-var numberToRepeat1 = 5
-var repeatedExpected = 'Birria TacosBirria TacosBirria TacosBirria TacosBirria Tacos'
-
-var stringToRepeat2 = 'margherita pizza'
-var numberToRepeat2 = 2
-var repeatedExpected = 'margherita pizzamargherita pizza'
+var stringToRepeat2 = "margherita pizza";
+var numberToRepeat2 = 2;
+var repeatedExpected = "margherita pizzamargherita pizza";
 
 /**
  * Given a string and an integer representing how many times the string should
  * be repeated, create a new string that is the given string repeated that
  * many times.
  * @returns {string} The given string repeated the specified amount of times.
-*/
+ */
 function stringRepeat(str, num) {}
 
-console.log(stringRepeat(stringToRepeat1, numberToRepeat1))
-console.log(stringRepeat(stringToRepeat2, numberToRepeat2))
+console.log(stringRepeat(stringToRepeat1, numberToRepeat1));
+console.log(stringRepeat(stringToRepeat2, numberToRepeat2));
