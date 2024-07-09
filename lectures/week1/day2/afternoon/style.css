@@ -1,0 +1,23 @@
+.box {
+  border: 1px solid red;
+  width: 100px;
+  display: inline-block;
+}
+
+.item {
+  width: 200px;
+  margin-right: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: white;
+  display: inline-block;
+}
+
+.store-items {
+  padding: 20px;
+  background-color: blanchedalmond;
+}
+
+.border {
+  border: 1px solid #5ab8b9;
+}
