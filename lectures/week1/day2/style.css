@@ -1,0 +1,52 @@
+/* Selector allows us to target the elements we want to style */
+
+/* HTML Selectors */
+/* all instances of that specific html tag */
+
+h1 {
+  color: blue;
+  background-color: goldenrod;
+}
+
+p {
+  font-family: sans-serif;
+  color: magenta;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+}
+
+/* Classes */
+/* selector that applies css to any element assigned the class */
+/* classes can be used more than once */
+/* we can use multiple classes on an element */
+/* sytax: .classname {} */
+/* classes take priorty over HTML selectors */
+.my-class {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.dash-border {
+  border: 2px dashed black;
+}
+/* IDs */
+/* selector that applies css to the element given the id */
+/* IDs can only be used ONCE */
+/* syntax: #idname {} */
+/* id has the highest priority */
+
+#main {
+  border: 2px solid red;
+  padding: 20px;
+}
+
+/* Wildcard */
+/* target everything on the page including the body tag */
+/* also used for CSS reset */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
