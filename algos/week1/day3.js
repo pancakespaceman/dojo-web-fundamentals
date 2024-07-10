@@ -22,13 +22,20 @@ var searchItem4 = 5;
 var expected4 = -1;
 
 /**
+ * JSDoc
  * Finds the index from the given array where the given item is found.
  * @param {Array<any>} items An array of any kind of items.
  * @param {any} searchItem The item to find.
  * @returns {number} The index of found item, or -1 if not found.
  */
 function indexOf(items, searchItem) {
-  // code here
+  for (var i = 0; i < items.length; i++) {
+    if (items[i] == searchItem) {
+      return i;
+    }
+  }
+
+  return -1;
 }
 
 // Tests
@@ -82,7 +89,14 @@ var expected5 = null;
  * @returns {any} The item at the nthToLast index or null.
  */
 function nthLast(items, nthToLast) {
-  // code here
+  // calculate the nthToLast index
+  var idx = items.length - nthToLast;
+
+  if (idx >= 0 && idx < items.length) {
+    return items[idx];
+  } else {
+    return null;
+  }
 }
 
 // Tests

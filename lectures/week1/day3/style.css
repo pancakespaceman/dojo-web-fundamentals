@@ -1,0 +1,62 @@
+* {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: blanchedalmond;
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container2 {
+  background-color: blanchedalmond;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.links {
+  display: flex;
+  /* justify-content: space-between; */
+  /* 2 ways to add space between the links */
+  /* method #1 is to increase the width of links */
+  /* width: 30%; */
+  /* method #2 is to use the gap property */
+  /* gap is like margin, but specifically only between flex children */
+  gap: 50px;
+  list-style-type: none;
+}
+
+.ib {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.m {
+  margin-left: 100px;
+}
+
+.row {
+  display: flex;
+  background-color: gold;
+  padding: 10px;
+}
+.col {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+}
+
+.col-2 {
+  flex: 2;
+  padding: 20px;
+  margin: 10px;
+}
