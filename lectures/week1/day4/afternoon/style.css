@@ -1,0 +1,151 @@
+/* CSS Reset */
+* {
+  border: 0px none;
+  outline: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/* Utility Classes */
+/* generic classes that assign (usually) a single property */
+/* use many of these classes together to apply CSS */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+
+.gap-1 {
+  gap: 10px;
+}
+.gap-2 {
+  gap: 20px;
+}
+.gap-3 {
+  gap: 30px;
+}
+.gap-4 {
+  gap: 40px;
+}
+.gap-5 {
+  gap: 50px;
+}
+
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.col-3 {
+  flex: 3;
+}
+.col-4 {
+  flex: 4;
+}
+.col-5 {
+  flex: 5;
+}
+
+/* Header */
+#header {
+  background-color: rgb(12, 76, 51);
+  padding: 15px 5%;
+  color: white;
+}
+
+#header p {
+  color: rgb(67, 183, 139);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#header ul {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+#header ul li {
+  font-weight: bold;
+}
+
+/* Banner */
+#banner {
+  background-color: rgb(14, 17, 23);
+  padding: 75px 25%;
+  border-bottom: 4px solid white;
+}
+
+#banner p {
+  color: white;
+  font-size: 28px;
+}
+
+.btn {
+  background-color: rgb(67, 183, 139);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+/* Main */
+#main {
+  color: white;
+}
+
+#left-main {
+  background-color: rgb(14, 17, 23);
+  padding: 25px;
+}
+
+#left-main h2 {
+  margin-bottom: 30px;
+}
+
+#left-main > p {
+  margin-bottom: 50px;
+}
+
+.info {
+  margin-bottom: 50px;
+}
+
+.info img {
+  border-radius: 50%;
+}
+
+#right-main {
+  background-color: rgb(24, 29, 39);
+  padding: 25px;
+}
