@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#user-card,
+#education,
+#con-request,
+#cons {
+  background-color: rebeccapurple;
+  /* height: 200px; */
+  margin-bottom: 20px;
+}
+
+#left-main,
+#right-main {
+  border: 5px solid red;
+  flex: 1;
+}
+
+#main {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5%;
+  padding: 20px 10%;
+}
+
+#nav {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+}
+.box {
+  background-color: dodgerblue;
+  /* height: 50px; */
+  /* width: 200px; */
+}
