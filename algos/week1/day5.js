@@ -10,7 +10,7 @@
 
 var arr1 = ["a", "b", "c", "d", "e"];
 var startIdx1 = 0;
-var endIdx1 = 5;
+var endIdx1 = 5; // stop at index 4
 var expected1 = ["a", "b", "c", "d", "e"];
 
 var arr2 = ["a", "b", "c", "d", "e"];
@@ -24,8 +24,8 @@ var endIdx3 = 2;
 var expected3 = ["b"];
 
 var arr4 = ["a", "b", "c", "d", "e"];
-var startIdx4 = -100;
-var endIdx4 = 100;
+var startIdx4 = -100; // turn to 0
+var endIdx4 = 100; // arr.length
 var expected4 = ["a", "b", "c", "d", "e"];
 
 var arr5 = ["a", "b", "c", "d", "e"];
