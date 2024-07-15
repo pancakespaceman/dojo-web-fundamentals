@@ -35,7 +35,7 @@ var lifesAnswers = [
 function consultTheOracle(arr) {
   // code here
   // get the random number
-  var randNum = 0;
+  var randNum = Math.floor(Math.random() * arr.length);
 
   return arr[randNum];
 }
@@ -65,7 +65,19 @@ var expected3 = [];
  *    itself.
  */
 function concatArrWithSelf(items) {
-  // code here
+  // SETUP
+  var newArr = [];
+
+  // WORK
+  for (var i = 0; i < items.length; i++) {
+    newArr.push(items[i]);
+  }
+
+  for (var i = 0; i < items.length; i++) {
+    newArr.push(items[i]);
+  }
+  // RETURN
+  return newArr;
 }
 
 console.log(concatArrWithSelf(arr1));
