@@ -34,6 +34,10 @@ var lifesAnswers = [
  */
 function consultTheOracle(arr) {
   // code here
+  // get the random number
+  var randNum = 0;
+
+  return arr[randNum];
 }
 
 console.log(consultTheOracle(lifesAnswers));
@@ -56,8 +60,6 @@ var expected3 = [];
 
 /**
  * Creates a new array that is a concatenation of the given array with itself.
- * - Time: O(?).
- * - Space: O(?).
  * @param {Array<any>} items
  * @returns {Array<any>} The resulting concatenation of the given arr with
  *    itself.
