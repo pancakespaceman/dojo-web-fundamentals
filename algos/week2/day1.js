@@ -36,6 +36,8 @@ function consultTheOracle(arr) {
   // code here
 }
 
+console.log(consultTheOracle(lifesAnswers));
+
 /* 
   From zoom interview with student in year 2020
 
@@ -63,3 +65,7 @@ var expected3 = [];
 function concatArrWithSelf(items) {
   // code here
 }
+
+console.log(concatArrWithSelf(arr1));
+console.log(concatArrWithSelf(arr2));
+console.log(concatArrWithSelf(arr3));
