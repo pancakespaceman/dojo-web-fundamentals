@@ -35,7 +35,7 @@ var pokemon = [
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
-function dividibleByThree(pokemon) {}
+function divisibleByThree(pokemon) {}
 
 /**
  * console.log the pokemon objects that have more than one type
