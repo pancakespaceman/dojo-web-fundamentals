@@ -37,12 +37,16 @@ var pokemon = [
  */
 function divisibleByThree(pokemon) {}
 
+// divisibleByThree(pokemon)
+
 /**
  * console.log the pokemon objects that have more than one type
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
 function moreThanOneType(pokemon) {}
+
+// moreThanOneType(pokemon)
 
 /**
  * console.log the names of the pokemon whose only type is 'poison'
@@ -51,6 +55,8 @@ function moreThanOneType(pokemon) {}
  */
 function poisonType(pokemon) {}
 
+// poisonType(pokemon)
+
 /**
  * console.log the first type of all the pokemon whose second type is flying
  * @param {Array<any>} pokemon
@@ -58,9 +64,13 @@ function poisonType(pokemon) {}
  */
 function flyingSecondType(pokemon) {}
 
+// flyingSecondType(pokemon)
+
 /**
  * console.log the reverse of the names of the pokemon whose only type is 'poison'
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
 function reversedNamesOfPoisonPokemon(pokemon) {}
+
+// reversedNamesOfPoisonPokemon(pokemon)
