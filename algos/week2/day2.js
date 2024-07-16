@@ -35,7 +35,13 @@ var pokemon = [
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
-function divisibleByThree(pokemon) {}
+function divisibleByThree(pokemon) {
+  for (var i = 0; i < pokemon.length; i++) {
+    if (pokemon[i].id % 3 === 0) {
+      console.log(pokemon[i]);
+    }
+  }
+}
 
 // divisibleByThree(pokemon)
 
@@ -44,7 +50,13 @@ function divisibleByThree(pokemon) {}
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
-function moreThanOneType(pokemon) {}
+function moreThanOneType(pokemon) {
+  for (var i = 0; i < pokemon.length; i++) {
+    if (pokemon[i].types.length > 1) {
+      console.log(pokemon[i]);
+    }
+  }
+}
 
 // moreThanOneType(pokemon)
 
@@ -53,16 +65,28 @@ function moreThanOneType(pokemon) {}
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
-function poisonType(pokemon) {}
+function poisonType(pokemon) {
+  for (var i = 0; i < pokemon.length; i++) {
+    if (pokemon[i].types.length === 1 && pokemon[i].types[0] === "poison") {
+      console.log(pokemon[i].name);
+    }
+  }
+}
 
-// poisonType(pokemon)
+poisonType(pokemon);
 
 /**
  * console.log the first type of all the pokemon whose second type is flying
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
-function flyingSecondType(pokemon) {}
+function flyingSecondType(pokemon) {
+  for (var i = 0; i < pokemon.length; i++) {
+    if (pokemon[i].types.length > 1 && pokemon[i].types[1] === "flying") {
+      console.log(pokemon[i].types[0]);
+    }
+  }
+}
 
 // flyingSecondType(pokemon)
 
@@ -71,6 +95,24 @@ function flyingSecondType(pokemon) {}
  * @param {Array<any>} pokemon
  * @returns {null} no return
  */
-function reversedNamesOfPoisonPokemon(pokemon) {}
+function reversedNamesOfPoisonPokemon(pokemon) {
+  for (var i = 0; i < pokemon.length; i++) {
+    if (pokemon[i].types.length === 1 && pokemon[i].types[0] === "poison") {
+      console.log(reverseString(pokemon[i].name));
+    }
+  }
+}
 
-// reversedNamesOfPoisonPokemon(pokemon)
+reversedNamesOfPoisonPokemon(pokemon);
+function reverseString(str) {
+  // strings are basically arrays, meaning they have indexes and a length
+  // strings are immutable
+  var rStr = "";
+
+  // loops can start at the beginning or the end of a string/array
+  for (var i = str.length - 1; i >= 0; i--) {
+    rStr += str[i];
+  }
+
+  return rStr;
+}
