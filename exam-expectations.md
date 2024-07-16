@@ -34,6 +34,8 @@
 ### Completing and Submitting exam
 
 - Everything on the exam is on the platform and/or in your assignments
+- Use the rubric to guide you on how you're doing during the exam
+  - on the platform
 - Must zip up the ENTIRE project folder, including the images you download
   - Part of the rubric
 - YOU MUST SUBMIT YOUR EXAM FOR IT TO BE GRADED
