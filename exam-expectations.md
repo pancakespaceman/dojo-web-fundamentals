@@ -43,6 +43,8 @@
   - upon reaching the time limit, the platform will close and you will no longer be able to submit
 - Exam will be graded by end of school day (unless you start late)
 - Don't put the exam on github
+- Single submission for the exam
+  - double check your exam against the rubric
 
 ### Attendance
 
@@ -85,7 +87,7 @@ Exam code will be sent out over email
 - Learn platform
 - Notes
 - Assignments
-- google, w3schools, MDN docs
+- google, w3schools, MDN docs (code snippets, generally you need to adjust what you find online to fit your use case)
 - Myself and david
 
 ### What can't you use?
