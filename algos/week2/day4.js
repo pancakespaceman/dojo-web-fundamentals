@@ -25,12 +25,21 @@ var expected3 = [10, 20];
 function flatten2dArray(twoDimArr) {
   // SETUP
   // variable to have an empty array to hold all the elements
+  const flattened = [];
+
   // WORK
   // Loop through the outer array to access each of the inner arrays
   // Nested loop to access each of the inner array elements
   // now that i have each individual element, push it into the new array
+  for (let i = 0; i < twoDimArr.length; i++) {
+    for (let j = 0; j < twoDimArr[i].length; ++j) {
+      flattened.push(twoDimArr[i][j]);
+    }
+  }
+
   // RETURN
   // return the newly flattened array
+  return flattened;
 }
 
 /*****************************************************************************/
@@ -79,5 +88,57 @@ var expected8 = null;
  *    The ? in front means it's nullable.
  */
 function secondLargest(nums) {
-  // code here
+  // SETUP
+  // edge case if statement to exit the function early if the array length is too short
+  if (nums.length < 2) {
+    return null;
+  }
+  // variable to hold our largest value, default value of arr[0]
+  // variable to hold the second largest value, default value of arr[1]
+  var largest = nums[0];
+  var secondLargest = nums[1];
+
+  // WORK
+  // First Loop through the array to find the largest value
+  // inside the loop, we use an if statement to compare the current index value to our largest variable
+  // if the index value is larger, then we reassign the largest variable
+  for (var i = 0; i < nums.length; i++) {
+    if (nums[i] > largest) {
+      largest = nums[i];
+    }
+  }
+  // Now we have found the largest value in the array
+
+  // Loop through the array again to find the second largest
+  // if statement, check if nums[i] is less that the largest AND if nums[i] is larger than second largest
+  // if true, reassign second largest
+  // what if secondLargest is already set as the largest value
+  for (var i = 0; i < nums.length; i++) {
+    if (secondLargest === largest && nums[i] < largest) {
+      secondLargest = nums[i];
+    }
+
+    if (nums[i] < largest && nums[i] > secondLargest) {
+      secondLargest = nums[i];
+    }
+  }
+
+  // Check to see if largest is equal to secondLargest
+  // certain situations could mean that these two variables end up the same value
+  if (largest === secondLargest) {
+    return null;
+  }
+
+  // RETURN
+  // return the second largest value
+  return secondLargest;
 }
+
+// console.log(secondLargest(nums1));
+// console.log(secondLargest(nums2));
+console.log(secondLargest(nums3));
+// console.log(secondLargest(nums4));
+console.log(secondLargest(nums5));
+console.log(secondLargest(nums6));
+// console.log(secondLargest(nums7));
+// console.log(secondLargest(nums8));
