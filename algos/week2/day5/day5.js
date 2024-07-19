@@ -28,7 +28,53 @@ function render(theDojo) {
 //        Use i and j as the indexes to check theDojo.
 function howMany(i, j, element) {
   console.log({ i, j });
-  alert("TODO - determine how many ninjas are hiding in adjacent squares");
+  // 1st method is to target each potential square and access the value
+  var count = 0;
+
+  // we don't want to include theDojo[i][j] because thats the button we clicked on
+
+  // if (theDojo[i - 1] !== undefined && theDojo[i - 1][j - 1] !== undefined) {
+  //   count += theDojo[i - 1][j - 1];
+  // }
+  // if (theDojo[i - 1] !== undefined && theDojo[i - 1][j] !== undefined) {
+  //   count += theDojo[i - 1][j];
+  // }
+  // if (theDojo[i - 1] !== undefined && theDojo[i - 1][j + 1] !== undefined) {
+  //   count += theDojo[i - 1][j + 1];
+  // }
+  // if (theDojo[i][j - 1] !== undefined) {
+  //   count += theDojo[i][j - 1];
+  // }
+  // if (theDojo[i][j + 1] !== undefined) {
+  //   count += theDojo[i][j + 1];
+  // }
+  // if (theDojo[i + 1] !== undefined && theDojo[i + 1][j - 1] !== undefined) {
+  //   count += theDojo[i + 1][j - 1];
+  // }
+  // if (theDojo[i + 1] !== undefined && theDojo[i + 1][j] !== undefined) {
+  //   count += theDojo[i + 1][j];
+  // }
+  // if (theDojo[i + 1] !== undefined && theDojo[i + 1][j + 1] !== undefined) {
+  //   count += theDojo[i + 1][j + 1];
+  // }
+
+  // 2nd method
+  // programmatically using loops
+  for (var row = i - 1; row <= i + 1; row++) {
+    for (var col = j - 1; col <= j + 1; col++) {
+      if (row === i && col === j) {
+        // if we are at the button we clicked on
+        // move to the next iteration of the loop
+        continue;
+      }
+      // this code block will run for every index
+      if (theDojo[row] !== undefined && theDojo[row][col] != undefined) {
+        count += theDojo[row][col];
+      }
+    }
+  }
+
+  alert(`There are ${count} ninjas nearby.`);
 }
 
 // BONUS CHALLENGES
