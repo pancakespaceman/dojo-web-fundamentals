@@ -19,8 +19,6 @@ var expected3 = -1;
 
 /**
  * Returns the index of the smallest number from the given array.
- * - Time: O(?).
- * - Space: O(?).
  * @param {Array<number>} nums
  * @returns {number} Index of smallest number or -1 if empty given array.
  */
@@ -51,9 +49,6 @@ var expected4 = [];
 
 /**
  * Reverses the given arr in place without built in methods
- * BONUS: Do this in place without built ins
- * - Time: O(?).
- * - Space: O(?).
  * @param {Array<any>} items
  * @returns {Array<any>} The given arr after being reversed.
  */
