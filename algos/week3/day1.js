@@ -23,7 +23,19 @@ var expected3 = -1;
  * @returns {number} Index of smallest number or -1 if empty given array.
  */
 function indexOfMinVal(nums) {
-  // code here
+  if (nums.length === 0) {
+    return -1;
+  }
+
+  var min = 0;
+
+  for (var i = 0; i < nums.length; i++) {
+    if (nums[i] < nums[min]) {
+      min = i;
+    }
+  }
+
+  return min;
 }
 
 /*******************************************************************************/
@@ -35,7 +47,7 @@ function indexOfMinVal(nums) {
   Do it in place without using any built in methods
 */
 
-var arr1 = [1, 2, 3];
+var arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
 var expected1 = [3, 2, 1];
 
 var arr2 = ["a", "b"];
@@ -53,5 +65,15 @@ var expected4 = [];
  * @returns {Array<any>} The given arr after being reversed.
  */
 function reverseArr(items) {
-  // code here
+  console.log("The array initially", items);
+  for (var leftIdx = 0; leftIdx < Math.floor(items.length / 2); leftIdx++) {
+    var rightIdx = items.length - 1 - leftIdx;
+    var temp = items[leftIdx];
+    items[leftIdx] = items[rightIdx];
+    items[rightIdx] = temp;
+    console.log("The array after swap", items);
+  }
+  return items;
 }
+
+reverseArr(arr1);
