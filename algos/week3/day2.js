@@ -26,7 +26,11 @@ var arr2Expected = ["a"];
  * @returns {number} The new length of items.
  */
 function unshift(items, newItem) {
-  // code here
+  // loop through the array, starting at the end
+  // shift each value over by one index to the right
+  // by the end of the loop, all values will be moved over
+  // and the first index will have a duplicate value
+  // we can then change the first index to the newItem
 }
 
 /* 
@@ -57,5 +61,10 @@ var expectedArr3 = [];
  * @returns {any} The removed value previously at idx 0.
  */
 function shift(items) {
-  // code here
+  // save the first index value to a variable to preserve it
+  // starting the loop at the index of 1
+  // shift everything to the left (items[i - 1] = items[i])
+  // now there is an extra value at the end of the array
+  // subtract the array length by 1 to shorten the array
+  // items.length - 1
 }
