@@ -106,9 +106,10 @@ Example of why constants are not theoretically not important:
 |---|--------|---------|---|
 | 1 | 10 | 1 | n^2 is smaller|
 | 5 | 50 | 25 |n^2 is smaller|
-| 10 | 1,000 | 10,000 | n^2 is 10x bigger|
+| 10 | 100 | 100 | n^2 is the same size|
 | 100 | 1,000 | 10,000 | n^2 is 10x bigger|
-| 1000 | 10,000 | 1,000,000 | n^2 is 1000x bigger|
+| 1000 | 10,000 | 1,000,000 | n^2 is 100x bigger|
+| 10000 | 100,000 | 100,000,000 | n^2 is 1000x bigger|
 
 Practical vs Theoretical Differences
 
