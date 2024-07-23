@@ -21,8 +21,6 @@ var arr2Expected = ["a"];
 /**
  * Shifts all items to the right by one to make space to add the given new item
  * to the front of the given array.
- * - Time: O(?).
- * - Space: O(?).
  * @param {Array<any>} items An array of any kind of items.
  * @param {any} newItem To add to front.
  * @returns {number} The new length of items.
@@ -55,8 +53,6 @@ var expectedArr3 = [];
 /**
  * Shifts every item of the array to the left by 1 so that the first item is
  * removed and returned.
- * - Time: O(?).
- * - Space: O(?).
  * @param {Array<any>} items An array of any kind of items.
  * @returns {any} The removed value previously at idx 0.
  */
