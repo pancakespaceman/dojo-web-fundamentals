@@ -26,14 +26,26 @@ var arr3Expected = ["a", "b", "c"];
  * Removes and returns the item at the given idx from the given array and
  * shifts the remaining items to fill the empty space created by the item
  * being removed.
- * - Time: O(?).
- * - Space: O(?).
+ * - Time: O(n - 1) -> O(n) - linear
+ * - Space: O(1).
  * @param {Array<any>} items
  * @param {number} idx Index of the item to be removed.
  * @returns {any} The removed item.
  */
 function removeAt(items, idx) {
-  // code here
+  if (idx < 0 || idx >= items.length) {
+    return null;
+  }
+
+  var removed = arr[idx];
+
+  for (var i = idx; i < items.length - 1; i++) {
+    arr[i] = arr[i + 1];
+  }
+
+  items.length--;
+
+  return removed;
 }
 
 /* 
@@ -54,15 +66,40 @@ var nums3 = [5, 1, 0, 2, 3, 0];
 var expected3 = [0, 5, 1, 2, 3, 0];
 
 /**
+ * JS DOC
  * Moves the smallest number in the given array to the front.
- * - Time: O(?).
- * - Space: O(?).
+ * - Time: O(2n) -> O(n) -- We can potentially loop through the whole array twice
+ * - Space: O(1) - constant because this algo doesn't take up any extra memory
+ *  as the size of the input grows. No new object or array is created and grows with the size of the input
  * @param {Array<number>} nums
  * @returns {Array<number>} The given arr after the min has been moved to front.
  */
 function minToFront(nums) {
-  // code here
-
+  if (nums.length < 1) {
+    return nums;
+  }
   var min = nums[0];
   var idxOfMin = 0;
+
+  // Find the min value
+  for (var i = 1; i < nums.length; i++) {
+    if (nums[i] < min) {
+      min = nums[i];
+      idxOfMin = i;
+    }
+  }
+
+  // shift the min value to the front
+  // starting from where the min is, shift to the right to overwrite the min value
+  // which will leave an empty space at the beginning
+  // i >= 1 so that our i - 1 doesn't go below 0
+  for (var i = idxOfMin; i >= 1; i--) {
+    nums[i] = nums[i - 1];
+  }
+  console.log("Nums after the shifting:", nums);
+
+  nums[0] = min;
+  return nums;
 }
+
+console.log(minToFront(nums1));
