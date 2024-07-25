@@ -11,12 +11,20 @@ var expected1 = [30, 40, 50];
 /**
  * Returns a new array that is the sum of the columns of the two given arrays
  * of equal lengths.
+ * Time: O(n)  - linear. n= length of the array, since both nums1 and nums2 are the same length
+ * Space: O(n) - the new array created will linearly increase in the length with the input
  * @param {Array<number>} nums1
  * @param {Array<number>} nums2
  * @returns {Array<number>} The column sums.
  */
 function sumArrColumns(nums1, nums2) {
-  // code here
+  var summedCols = [];
+
+  for (var i = 0; i < nums1.length; i++) {
+    summedCols.push(nums1[i] + nums2[i]);
+  }
+
+  return summedCols;
 }
 
 /*****************************************************************************/
@@ -55,7 +63,7 @@ var expected3 = [1, 2, 3, 4];
 After 4 rotations it is back to it's starting point.
 */
 
-console.log(5 % 2);
+// console.log(5 % 2);
 
 var nums4 = [1, 2];
 var k4 = 5;
@@ -68,10 +76,20 @@ After 4 rotations it is back to it's original order again.
 
 /**
  * Rotates the array items to the right "k" times.
+ * Time: O(n) - linear
+ * Space: O(n) - linear
  * @param {Array<number>} nums The numbers to be rotated.
  * @param {number} k The amount of times to rotate the last item to the front.
  * @returns {Array<number>} The given array after being rotated.
  */
 function rotate(nums, k) {
   var rotateAmt = k % nums.length;
+  // taking the rotateAmt of elements from the end of the array and put them at the front
+  // grab the rotateAmt of elements from the end
+  var numsToRotate = nums.splice(nums.length - rotateAmt, rotateAmt);
+  // put these elements back in the front of the array
+  nums.splice(0, 0, ...numsToRotate);
+  return nums;
 }
+
+console.log(rotate(nums1, k1));
