@@ -21,6 +21,24 @@ var expected2 = 0;
  * @return {number} max profit
  */
 function maxProfit(prices) {
+  if (prices.length < 2) {
+    return 0;
+  }
+
   var minPrice = prices[0];
   var maxProfit = 0;
+
+  for (var i = 0; i < prices.length; i++) {
+    var currentPrice = prices[i];
+
+    if (currentPrice < minPrice) {
+      minPrice = currentPrice;
+    }
+
+    if (currentPrice - minPrice > maxProfit) {
+      maxProfit = currentPrice - minPrice;
+    }
+  }
+
+  return maxProfit;
 }
