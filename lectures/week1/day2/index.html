@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to HTML</title>
+</head>
+<body>
+    <h1>Hello There</h1>
+    <h2>General Kenobi</h2>
+
+    <p>This <strong>is</strong> a paragraph</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero deleniti facere molestiae! Officiis illo qui ut iste inventore itaque explicabo aliquam repellendus, doloremque molestiae architecto labore mollitia, corporis quia quibusdam.
+    </p>
+
+    <!-- HTML tag attributes -->
+    <!-- tags can have different attributes to describe or add functionality -->
+    <!-- anchor tag uses the href attribute to hold the url we go to when clicked -->
+    <!-- SYTNAX: all attributes go in the opening tag -->
+    <!-- SYNTAX: name="" -->
+    <a href="https://en.wikipedia.org/wiki/New_World" target="_blank">
+        Link to the new world
+    </a>
+
+    <!-- <opening tag>
+        Content / text
+    </closing tag> -->
+
+    <ul>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Dog">Dog</a>
+        </li>
+        <li>Cat</li>
+        <li>Dragon</li>
+        <li>Monkey</li>
+    </ul>
+
+    <ol>
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Dragon</li>
+        <li>Monkey</li>
+    </ol>
+
+    <table>
+        <tr>
+            <th>Movie</th>
+            <th>Year</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>Up</td>
+            <td>2009</td>
+            <td>PG</td>
+        </tr>
+        <tr>
+            <td>The Matrix</td>
+            <td>1999</td>
+            <td>R</td>
+        </tr>
+    </table>
+
+    <!-- Nesting -->
+    <!-- HTML tags inside of other html tags -->
+    <!-- Parent/Child relationship -->
+
+    <!-- Img tags are self closing -->
+    <!-- Computers don't just know where things are, you have to provide a path -->
+
+    <img src="https://placekeanu.com/200/200" alt="breathtaking">
+    <img src="https://placekitten.com/200/200" alt="breathtaking">
+    
+
+    <input type="radio" name="font" value="bold" id="bold">
+    <label for="bold"><strong>Bold</strong></label>
+    <input type="radio" name="font" value="normal" id="normal">
+    <label for="normal">Normal</label>
+
+
+    <form action="/process" method="post">
+        <div>
+            <label>Name: </label>
+            <input type="text" name="name" 
+            placeholder="Your name..." >
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="text" name="email" 
+            placeholder="Your email..." >
+        </div>
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">I would like 
+            to receive email offers!</label>
+        </div>
+        <input type="submit" value="Sign Up!" >
+    </form>
+</body>
+</html>
