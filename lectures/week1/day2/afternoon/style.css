@@ -1,0 +1,78 @@
+/* Wildcards */
+/* Applies the CSS to every element, include the body */
+* {
+    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HTML Selectors */
+/* just put the tag  */
+/* Syntax: tag { property: value; } */
+p {
+    color: green;
+}
+
+td {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+
+/* Class */
+/* a class is a selector that allows us to apply CSS to any element */
+/* we apply the class to */
+/* we can mix and match elements when using a class */
+/* Syntax: .classname { property: value; } */
+
+/* kebab-case, snake_case, camelCase */
+.my-class {
+    font-family: cursive;
+    color: aquamarine;
+    background-color: gold;
+    border: 2px solid red;
+}
+
+/* use multiple classes on a given element */
+
+.bg-red {
+    background-color: maroon;
+}
+
+.border-blue {
+    border: 2px dashed blue;
+}
+
+
+/* ID */
+/* an id is a selector that allows us to apply CSS to a SINGLE element */
+/* Syntax: #idname { property: value; } */
+#my-id {
+    background-color: chartreuse;
+    color: crimson;
+}
+
+#header {
+    padding: 20px;
+    border: 5px solid forestgreen;
+}
+
+
+/* Descendant selector */
+#row1 td {
+    background-color: blanchedalmond;
+    border: 10px solid yellow;
+}
+
+
+a {
+    text-decoration: none;
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+#header h1 {
+    border-radius: 20px;
+}
