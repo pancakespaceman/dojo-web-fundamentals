@@ -1,0 +1,80 @@
+* {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: blanchedalmond;
+    /* border: 2px solid red; */
+    padding: 10px;
+    /* Flex only applies to direct children */
+    display: flex;
+    /* Justify content is for moving elements around horizontally */
+    justify-content: space-between;
+    /* Align items is for moving elements around vertically */
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    /* Justify content only adds space when there is available space inthe parent */
+    justify-content: space-between;
+    /* We can add space inbetween the elements */
+    /* Option A. adding in margin to the list items */
+    /* Option B. add gap to the parent element*/
+    /* gap: 20px; */
+    /* We can make the ul bigger */
+    width: 35%;
+}
+
+.links li {
+    /* margin-right: 20px; */
+}
+
+
+.row {
+    display: flex;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+
+.display {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category p {
+    font-size: 8pt;
+}
+
+
+.shorthand-row {
+    display: flex;
+    padding: 10px;
+    background-color: blanchedalmond;
+    gap: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border: 1px solid black;
+}
+
+.col-1 {
+    flex: 1;
+}
