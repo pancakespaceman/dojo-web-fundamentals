@@ -1,0 +1,49 @@
+* {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+h1 {
+    background-color: blanchedalmond;
+    color: black;
+    border: 5px solid red;
+}
+
+p {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.inline {
+    display: inline;
+}
+
+img {
+    display: block;
+}
+
+/* div {
+    background-color: gray;
+    padding: 20px;
+}
+
+div p {
+    display: inline-block;
+    width: 200px;
+} */
+
+
+
+.row {
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+.products {
+    display: inline-block;
+    width: 230px;
+    height: 300px;
+    vertical-align: top;
+}
