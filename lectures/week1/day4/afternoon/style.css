@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(14,17,23);
+}
+
+/* Navbar */
+#nav {
+  background-color: rgb(12,75,51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  gap: 40px;
+}
+
+#nav div {
+  display: flex;
+  gap: 10px;
+}
+
+#nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Banner */
+#banner {
+  padding: 100px 20%;
+  text-align:center;
+  border-bottom: 1px solid white;
+}
+
+#banner h1 {
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.btn {
+  background-color: rgb(68,183,139);
+  color: black;
+  padding: 20px 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+/* Main */
+#main {
+  display: flex;
+}
+
+
+/* Left Main */
+#left-main {
+  padding: 40px 3%;
+}
+
+#left-main h2 {
+  margin-bottom: 40px;
+}
+
+#left-main > p {
+  margin-bottom: 60px;
+}
+
+.facts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.facts img {
+  border-radius: 50%;
+}
+
+/* Right Main */
+
+#right-main {
+  padding: 40px 3%;
+  background-color: rgb(24,29,39);
+}
+
+#right-main button {
+  margin-bottom: 20px;
+}
+
+.green-link {
+  color: rgb(147,212,160);
+  text-decoration: none;
+}
+
+#right-main h4 {
+  font-weight: normal;
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+#right-main div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#right-main div img {
+  border-radius: 50%;
+}
+
+#right-main > a, #right-main > p {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.line {
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
