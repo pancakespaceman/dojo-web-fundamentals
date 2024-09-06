@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS on the Web</title>
+    <style>
+        h1 {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- We can add any event listener to any html tag -->
+    <!-- onclick does not have to be on just buttons, you can put it on any tag -->
+    <!-- inside the string for an event listener is valid JS code -->
+    <!-- <button onclick="alert('This is an alert from the button you clicked on!!! hahahahaahahahaha')">Click me!!!!</button> -->
+
+
+    <button onclick="foo()">Click me!!!!</button>
+
+    <!-- use the this keyword to pass elements to our JS file -->
+    <!-- we can change or interact with the page -->
+
+    <button onclick="changeColor(this)">Click me to change the color</button>
+
+    <button>Does nothing</button>
+
+    <br>
+
+    <button onclick="removeButton(this)" id="1">Remove me1</button>
+    <button onclick="removeButton(this)" id="2">Remove me2</button>
+    <button onclick="removeButton(this)" id="3">Remove me3</button>
+
+
+    <h1 onmouseover="makeRed(this)" onmouseout="removeRed(this)">Hello there</h1>
+
+    <!-- JavaScript should run AFTER the page has loaded -->
+    <!-- JS file should be linked at the bottom of the body (but still inside the body) -->
+    <script src="script.js"></script>
+</body>
+</html>
