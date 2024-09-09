@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center">
+      <h1 onclick="alert('Go Go Souper Heros!')">Souper Heros</h1>
+      <ul class="d-flex justify-content-between align-items-center">
+        <li id="li1" onclick="clickme(this)">HOME</li>
+        <li id="li2" onclick="clickme(this)">STORE</li>
+        <li id="li3" onclick="clickme(this)">ABOUT US</li>
+      </ul>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="d-flex justify-content-between align-items-center box">
+        <div class="col-1">
+          <h2 id="souper">Souper Cucumber</h2>
+          <img
+            src="./supercumber.jpg"
+            alt="souper cucumber"
+            onmouseover="over(this)"
+            onmouseout="out(this)"
+          />
+        </div>
+        <ul class="col-2" id="supercumber-soups">
+          <li>Minestrone</li>
+          <li>French Onion</li>
+          <li>Sauerkraut Soup</li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between align-items-center box">
+        <div class="col-1">
+          <h2 id="brock">Brock, the gym leader from pokemon</h2>
+          <img src="./soup-broc.jpg" alt="soup broc"/>
+        </div>
+        <ul class="col-2">
+          <li>Minestrone</li>
+          <li>French Onion</li>
+          <li>Sauerkraut Soup</li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between align-items-center box">
+        <div class="col-1">
+          <h2 id="beetman">Beetman</h2>
+          <img
+            src="./beetman.jpg"
+            alt="beetman"
+          />
+        </div>
+        <ul class="col-2" id="soup-list3">
+          <li>Borscht</li>
+          <li>French Onion</li>
+          <li>Sauerkraut Soup</li>
+        </ul>
+      </div>
+    </main>
+
+    <button class="test" onclick="changeTitle('#souper')">Click me 1</button>
+    <button class="test" onclick="changeTitle('#brock')">Click me 2</button>
+    <button class="test" onclick="changeTitle('#beetman')">Click me 3</button>
+
+    <label>I would like to eat </label>
+    <select onchange="dropdown(this)">
+      <option value="somehting else">Tacos</option>
+      <option>Pasta</option>
+      <option>Sushi</option>
+    </select>
+
+    <input type="text" oninput="input(this)"/>
+
+    <button>On</button>
+    <button>On</button>
+    <button>On</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
