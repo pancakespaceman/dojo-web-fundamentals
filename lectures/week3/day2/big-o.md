@@ -236,19 +236,18 @@ const expected6 = null;
 
 const nums7 = [2];
 const expected7 = null;
+2. Constants are dropped
+3. Worst case is _usually_ the way we measure
 
-const nums8 = [];
-const expected8 = null;
+## Algo Demo
 
-/**
- * Finds the second largest int from the given array and returns it or null.
- * - Time: O(?).
- * - Space: O(?).
- * @param {Array<number>} nums
- * @returns {?number} The second largest int from the given array or null.
- *    The ? in front means it's nullable.
- */
-function secondLargest(nums) {
-  // code here
+**Pseudocode** - explaining an algo step by step in English - algos are a logic problem, so first we need to logically solve it.
+
+```js
+/* 
+  Array: Second-Largest
+
+  Return the second-largest element of an array, or null if there is none.
+
 }
 ```
